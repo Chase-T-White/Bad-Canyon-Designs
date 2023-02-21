@@ -3,8 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Sidebar />
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
