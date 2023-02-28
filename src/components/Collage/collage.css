@@ -1,0 +1,7 @@
+.collage-quote {
+  background-image: url(../../../public/assets/misc/quotebg1.jpg);
+  width: calc(100% - 24px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

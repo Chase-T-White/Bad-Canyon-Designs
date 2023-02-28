@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
+import { Transition, Collage } from "../../components";
 import "./home.css";
 
 const Home = () => {
@@ -32,7 +33,7 @@ const Home = () => {
           <h1 className="hero_title text-center pt-5 text-light">
             The Art of Nick White
           </h1>
-          <Row>
+          <Row className="mb-3">
             <Col>
               <Image fluid src="../../assets/homePics/heroTopA.jpg"></Image>
             </Col>
@@ -47,10 +48,15 @@ const Home = () => {
           </Row>
           <Row>
             <Col>
-              <Image fluid src="../../assets/homePics/heroAsideA.jpg"></Image>
+              <Image
+                fluid
+                src="../../assets/homePics/heroAsideA.jpg"
+                className="h-100"
+                style={{ objectFit: "cover" }}
+              ></Image>
             </Col>
             <Col>
-              <Col>
+              <Col className="mb-3">
                 <Image
                   fluid
                   src="../../assets/homePics/heroMiddleA.jpg"
@@ -64,11 +70,23 @@ const Home = () => {
               </Col>
             </Col>
             <Col>
-              <Image fluid src="../../assets/homePics/heroAsideB.jpg"></Image>
+              <Image
+                fluid
+                src="../../assets/homePics/heroAsideB.jpg"
+                className="h-100"
+                style={{ objectFit: "cover" }}
+              ></Image>
             </Col>
           </Row>
         </Container>
       </section>
+      <Transition quote={"Health - Happiness - Adventure"} />
+      <Collage />
+      <Transition
+        quote={
+          "Creating art is like unlocking a door to enter into a world of my own making - where I can explore my imagination, express my emotions, and bring my ideas to life!"
+        }
+      />
     </main>
   );
 };

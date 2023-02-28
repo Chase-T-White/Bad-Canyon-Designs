@@ -7,4 +7,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(../public/assets/herobg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section,
+header {
+  margin-bottom: 8rem;
+}
+
+/* Studio */
+
+.studio-header {
+  background-image: url(../public/assets/misc/quotebg3.jpg);
+  background-position: center;
+
+  padding-block: 5rem;
+}
+
+.studio-header__quote {
+  font-size: 1.5rem;
+  color: #f8f9fa;
 }
