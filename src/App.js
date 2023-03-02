@@ -7,11 +7,15 @@ import {
   Shop,
   SingleProduct,
   Cart,
+  Checkout,
+  Login,
   Error,
 } from "./pages";
 import { Footer } from "./components";
+import { useSelector } from "react-redux";
 
 function App() {
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   return (
     <BrowserRouter>
       <Routes>
@@ -24,14 +28,18 @@ function App() {
             <Route path=":id" element={<SingleProduct />} />
           </Route>
           <Route path="cart" element={<Cart />} />
-          {/* <Route
+          <Route
             path="checkout"
             element={
-              <PrivateRoute>
+              isLoggedIn ? (
+                // <PrivateRoute>
                 <Checkout />
-              </PrivateRoute>
+              ) : (
+                /* </PrivateRoute> */
+                <Login />
+              )
             }
-          /> */}
+          />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

@@ -5,10 +5,17 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
 import { Transition, Collage } from "../../components";
 import "./home.css";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { authActions } from "../../store/authSlice";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const dispatch = useDispatch();
   return (
     <main className="home">
       {/* <div className={isLoad ? "preloader hidden" : "preloader"}></div> */}
@@ -26,6 +33,20 @@ const Home = () => {
             <Nav.Link>Studio</Nav.Link>
             <Nav.Link>Cart</Nav.Link>
           </Nav>
+          <Button>
+            <Link
+              to={isLoggedIn ? "/" : "checkout"}
+              className="link"
+              onClick={() => {
+                if (isLoggedIn) {
+                  return authActions.logout();
+                }
+              }}
+            >
+              {isLoggedIn ? "Logout" : "Login"}
+            </Link>
+          </Button>
+          <Button>Cart</Button>
         </Container>
       </Navbar>
       <section className="hero">

@@ -5,4 +5,6 @@ export { default as Gallery } from "./Gallery/Gallery";
 export { default as Story } from "./Story/Story";
 export { default as Studio } from "./Studio/Studio";
 export { default as Cart } from "./Cart/Cart";
+export { default as Login } from "./Login/Login";
+export { default as Checkout } from "./Checkout/Checkout";
 export { default as Error } from "./Error/Error";
