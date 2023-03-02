@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const amount = useSelector((state) => state.cart.amount);
   const dispatch = useDispatch();
   return (
     <main className="home">
@@ -31,7 +32,7 @@ const Home = () => {
           <Nav>
             <Nav.Link>Story</Nav.Link>
             <Nav.Link>Studio</Nav.Link>
-            <Nav.Link>Cart</Nav.Link>
+            <Nav.Link>Cart {amount}</Nav.Link>
           </Nav>
           <Button>
             <Link
