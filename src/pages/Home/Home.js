@@ -12,10 +12,13 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { authActions } from "../../store/authSlice";
 import { Link } from "react-router-dom";
+import { AiFillFacebook } from "react-icons/ai";
+import { HiOutlineShoppingCart } from "react-icons/hi2";
 
 const Home = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const amount = useSelector((state) => state.cart.amount);
+  console.log(amount);
   const dispatch = useDispatch();
   return (
     <main className="home">
@@ -23,21 +26,22 @@ const Home = () => {
       <Navbar bg="light">
         <Container className="justify-content-center">
           <Nav>
-            <Nav.Link>Shop</Nav.Link>
-            <Nav.Link>Gallery</Nav.Link>
+            <Link to={"shop"}>Shop</Link>
+            <Link to={"gallery"}>Gallery</Link>
           </Nav>
-          <Navbar.Brand className="nav-logo mx-5">
-            Bad Canyon Designs
-          </Navbar.Brand>
+          <Link to={"/"}>
+            <Navbar.Brand className="nav-logo mx-5">
+              Bad Canyon Designs
+            </Navbar.Brand>
+          </Link>
           <Nav>
-            <Nav.Link>Story</Nav.Link>
-            <Nav.Link>Studio</Nav.Link>
-            <Nav.Link>Cart {amount}</Nav.Link>
+            <Link to={"story"}>Story</Link>
+            <Link to={"studio"}>Studio</Link>
           </Nav>
           <Button>
             <Link
               to={isLoggedIn ? "/" : "checkout"}
-              className="link"
+              className="link text-white"
               onClick={() => {
                 if (isLoggedIn) {
                   return authActions.logout();
@@ -47,7 +51,18 @@ const Home = () => {
               {isLoggedIn ? "Logout" : "Login"}
             </Link>
           </Button>
-          <Button>Cart</Button>
+          <Link to={"cart"}>
+            <Button>
+              <HiOutlineShoppingCart />
+              {amount}
+            </Button>
+          </Link>
+          <Nav.Link
+            href="https://www.facebook.com/badcanyondesigns/"
+            target={"_blank"}
+          >
+            <AiFillFacebook />
+          </Nav.Link>
         </Container>
       </Navbar>
       <section className="hero">

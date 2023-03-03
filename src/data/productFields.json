@@ -1,87 +1,85 @@
-{
-  "productFields": [
-    {
-      "id": "01",
-      "category": "Clothing",
-      "subcategories": [
-        {
-          "gender": ["Male", "Female", "Everyone"]
-        },
-        {
-          "style": [
-            "Dresses",
-            "Leggings",
-            "Mini Skirt",
-            "Sweatshirts & Hoodies",
-            "T-Shirts",
-            "Tank Tops"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "category": "Phone Cases",
-      "subcategories": [
-        {
-          "type": ["All", "iPhone", "Samsung"]
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "category": "Stickers",
-      "subcategories": []
-    },
-    {
-      "id": "04",
-      "category": "Wall Art",
-      "subcategories": [
-        "Art Board Prints",
-        "Art Prints",
-        "Canvas Prints",
-        "Framed Prints",
-        "Metal Prints",
-        "Photogenic Prints",
-        "Posters"
-      ]
-    },
-    {
-      "id": "05",
-      "category": "Home & Living",
-      "subcategories": [
-        "Acrylic Blocks",
-        "Bedding",
-        "Clocks",
-        "Magnets",
-        "Mugs",
-        "Pillows & Cushions",
-        "Tapestries"
-      ]
-    },
-    {
-      "id": "06",
-      "category": "Stationery & Office",
-      "subcategories": [
-        "Greeting Cards",
-        "Hardcover Journals",
-        "Postcards",
-        "Spiral Notebooks"
-      ]
-    },
-    {
-      "id": "07",
-      "category": "Accessories",
-      "subcategories": [
-        "Backpacks",
-        "Drawstring Bags",
-        "Scarves",
-        "Socks",
-        "Tote Bags",
-        "Water Bottles",
-        "Zipper Pouches",
-        "Tech Accessories"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "01",
+    "category": "Clothing",
+    "subcategories": [
+      {
+        "gender": ["Male", "Female", "Everyone"]
+      },
+      {
+        "style": [
+          "Dresses",
+          "Leggings",
+          "Mini Skirt",
+          "Sweatshirts & Hoodies",
+          "T-Shirts",
+          "Tank Tops"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "category": "Phone Cases",
+    "subcategories": [
+      {
+        "type": ["All", "iPhone", "Samsung"]
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "category": "Stickers",
+    "subcategories": []
+  },
+  {
+    "id": "04",
+    "category": "Wall Art",
+    "subcategories": [
+      "Art Board Prints",
+      "Art Prints",
+      "Canvas Prints",
+      "Framed Prints",
+      "Metal Prints",
+      "Photogenic Prints",
+      "Posters"
+    ]
+  },
+  {
+    "id": "05",
+    "category": "Home & Living",
+    "subcategories": [
+      "Acrylic Blocks",
+      "Bedding",
+      "Clocks",
+      "Magnets",
+      "Mugs",
+      "Pillows & Cushions",
+      "Tapestries"
+    ]
+  },
+  {
+    "id": "06",
+    "category": "Stationery & Office",
+    "subcategories": [
+      "Greeting Cards",
+      "Hardcover Journals",
+      "Postcards",
+      "Spiral Notebooks"
+    ]
+  },
+  {
+    "id": "07",
+    "category": "Accessories",
+    "subcategories": [
+      "Backpacks",
+      "Drawstring Bags",
+      "Scarves",
+      "Socks",
+      "Tote Bags",
+      "Water Bottles",
+      "Zipper Pouches",
+      "Tech Accessories"
+    ]
+  }
+]
