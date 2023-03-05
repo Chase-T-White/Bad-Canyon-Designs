@@ -24,9 +24,8 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="story" element={<Story />} />
           <Route path="studio" element={<Studio />} />
-          <Route path="shop" element={<Shop />}>
-            <Route path=":id" element={<SingleProduct />} />
-          </Route>
+          <Route path="shop" element={<Shop />} />
+          <Route path="shop/:id" element={<SingleProduct />} />
           <Route path="cart" element={<Cart />} />
           <Route
             path="checkout"
