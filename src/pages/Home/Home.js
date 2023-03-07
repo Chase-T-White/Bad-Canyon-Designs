@@ -8,8 +8,7 @@ import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import { Transition, Collage } from "../../components";
 import "./home.css";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { authActions } from "../../store/authSlice";
 import { Link } from "react-router-dom";
 import { AiFillFacebook } from "react-icons/ai";
@@ -18,7 +17,6 @@ import { HiOutlineShoppingCart } from "react-icons/hi2";
 const Home = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const amount = useSelector((state) => state.cart.amount);
-  console.log(amount);
   const dispatch = useDispatch();
   return (
     <main className="home">
