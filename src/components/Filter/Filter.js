@@ -8,7 +8,11 @@ const Filter = () => {
       <hr />
       <div className="categories text-white">
         {categories.map((category) => {
-          return <p key={category.id}>{category.category}</p>;
+          return (
+            <p key={category.id} className="ps-3">
+              {category.category}
+            </p>
+          );
         })}
       </div>
     </aside>

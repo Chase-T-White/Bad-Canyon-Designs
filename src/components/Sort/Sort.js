@@ -1,6 +1,8 @@
 import React from "react";
 import { BsFillGridFill, BsList } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import { useDispatch, useSelector } from "react-redux";
 import { viewActions } from "../../store/viewSlice";
@@ -24,37 +26,39 @@ const Sort = () => {
   };
 
   return (
-    <div>
-      <div>
+    <Row className="align-items-end">
+      <Col>
         <Button>
           <BsFillGridFill onClick={toGridView} />
         </Button>
         <Button>
           <BsList onClick={toListView} />
         </Button>
-      </div>
-      <p>{products.length} items available</p>
-      <hr />
-      <Form>
-        <Form.Group className="mb-3">
-          <Form.Label htmlFor="sort" className="text-white">
-            Sort By
-          </Form.Label>
-          <Form.Select
-            name="sort"
-            id="sort"
-            value={"sort"}
-            onChange={updateSort}
-          >
-            <option value="none">-</option>
-            <option value="price-lowest">Price (Lowest)</option>
-            <option value="price-highest">Price (Highest)</option>
-            <option value="name-a">Name (a-z)</option>
-            <option value="name-z">Name (z-a)</option>
-          </Form.Select>
-        </Form.Group>
-      </Form>
-    </div>
+        <p>{products.length} items available</p>
+        <hr />
+      </Col>
+      <Col>
+        <Form>
+          <Form.Group className="mb-3">
+            <Form.Label htmlFor="sort" className="text-white">
+              Sort By
+            </Form.Label>
+            <Form.Select
+              name="sort"
+              id="sort"
+              value={"sort"}
+              onChange={updateSort}
+            >
+              <option value="none">-</option>
+              <option value="price-lowest">Price (Lowest)</option>
+              <option value="price-highest">Price (Highest)</option>
+              <option value="name-a">Name (a-z)</option>
+              <option value="name-z">Name (z-a)</option>
+            </Form.Select>
+          </Form.Group>
+        </Form>
+      </Col>
+    </Row>
   );
 };
 

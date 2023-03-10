@@ -3,13 +3,24 @@ import { ProductList, Sort, Filter } from "../../components";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 
 const Shop = () => {
   return (
     <main>
-      <Container>
+      <header>
+        <div className="header-img">
+          <Image
+            fluid
+            src="assets/headerImg.jpg"
+            className="h-100"
+            style={{ objectFit: "cover" }}
+          ></Image>
+        </div>
+      </header>
+      <Container fluid="xxl">
         <Row>
-          <Col>
+          <Col sm={3}>
             <Filter />
           </Col>
           <Col>
