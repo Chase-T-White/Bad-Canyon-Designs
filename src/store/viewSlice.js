@@ -6,10 +6,10 @@ const viewSlice = createSlice({
     gridView: true,
   },
   reducers: {
-    isGridView(state) {
+    gridView(state) {
       state.gridView = true;
     },
-    isNotGridView(state) {
+    listView(state) {
       state.gridView = false;
     },
   },
