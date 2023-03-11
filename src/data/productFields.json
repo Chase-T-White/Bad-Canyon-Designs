@@ -21,11 +21,7 @@
   {
     "id": "02",
     "category": "Phone Cases",
-    "subcategories": [
-      {
-        "type": ["All", "iPhone", "Samsung"]
-      }
-    ]
+    "subcategories": ["All", "iPhone", "Samsung"]
   },
   {
     "id": "03",

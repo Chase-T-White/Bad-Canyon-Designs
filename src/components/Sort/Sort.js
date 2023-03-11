@@ -26,20 +26,20 @@ const Sort = () => {
   };
 
   return (
-    <Row className="align-items-end">
-      <Col>
-        <Button>
+    <Row className="align-items-end mb-3">
+      <Col className="d-flex">
+        <Button className="me-1">
           <BsFillGridFill onClick={toGridView} />
         </Button>
-        <Button>
+        <Button className="me-2">
           <BsList onClick={toListView} />
         </Button>
-        <p>{products.length} items available</p>
+        <p className="text-white">{products.length} items available</p>
         <hr />
       </Col>
       <Col>
         <Form>
-          <Form.Group className="mb-3">
+          <Form.Group>
             <Form.Label htmlFor="sort" className="text-white">
               Sort By
             </Form.Label>
