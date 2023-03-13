@@ -1,9 +1,19 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { sortActions } from "../../store/sortSlice";
 import categories from "../../data/productFields.json";
 
 const Filter = () => {
-  const [filter, setFilter] = useState("none");
-  const [subCategories, setSubCategories] = useState([]);
+  const { filter, subCategories } = useSelector((state) => state.sort.filter);
+  const dispatch = useDispatch();
+
+  const setFilter = (e) => {
+    dispatch(sortActions.filterProducts(e.target.value));
+  };
+
+  const setSubFilter = (e) => {
+    dispatch(sortActions.filterSubProducts(e.target.value));
+  };
 
   useEffect(() => {
     if (filter === "none") {
@@ -21,7 +31,9 @@ const Filter = () => {
       <h3>Filters</h3>
       <hr />
       <h4>
-        <button onClick={() => setFilter("none")}>All Categories</button>
+        <button value="none" onClick={setFilter}>
+          All Categories
+        </button>
       </h4>
       {filter !== "none" && <h4>{filter}</h4>}
       <div className="categories">
@@ -32,9 +44,7 @@ const Filter = () => {
                   key={category.id}
                   className="d-block ps-3"
                   value={category.category}
-                  onClick={(e) => {
-                    setFilter(e.target.value);
-                  }}
+                  onClick={setFilter}
                 >
                   {category.category}
                 </button>

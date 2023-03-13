@@ -11,6 +11,7 @@ import products from "../../data/products.json";
 
 const Sort = () => {
   const dispatch = useDispatch();
+  const filteredProducts = useSelector((state) => state.sort.filtered_products);
   const isGridView = useSelector((state) => state.view.gridView);
   const toGridView = () => {
     dispatch(viewActions.gridView());
@@ -21,7 +22,6 @@ const Sort = () => {
   };
 
   const updateSort = (e) => {
-    console.log(e.target.value);
     dispatch(sortActions.sortProducts(e.target.value));
   };
 
@@ -34,7 +34,7 @@ const Sort = () => {
         <Button className="me-2">
           <BsList onClick={toListView} />
         </Button>
-        <p className="text-white">{products.length} items available</p>
+        <p className="text-white">{filteredProducts.length} items available</p>
         <hr />
       </Col>
       <Col>
@@ -43,12 +43,7 @@ const Sort = () => {
             <Form.Label htmlFor="sort" className="text-white">
               Sort By
             </Form.Label>
-            <Form.Select
-              name="sort"
-              id="sort"
-              value={"sort"}
-              onChange={updateSort}
-            >
+            <Form.Select name="sort" id="sort" onChange={updateSort}>
               <option value="none">-</option>
               <option value="price-lowest">Price (Lowest)</option>
               <option value="price-highest">Price (Highest)</option>
