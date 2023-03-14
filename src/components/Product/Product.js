@@ -14,6 +14,7 @@ const Product = ({ id, name, price, imageMain }) => {
         id,
         name,
         price,
+        imageMain,
         quantity: 1,
       })
     );
