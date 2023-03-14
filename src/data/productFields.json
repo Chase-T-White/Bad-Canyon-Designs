@@ -4,10 +4,11 @@
     "category": "Clothing",
     "subcategories": [
       {
-        "gender": ["Male", "Female", "Everyone"]
+        "gender": ["All", "Male", "Female"]
       },
       {
         "style": [
+          "All",
           "Dresses",
           "Leggings",
           "Mini Skirt",
@@ -32,6 +33,7 @@
     "id": "04",
     "category": "Wall Art",
     "subcategories": [
+      "All",
       "Art Board Prints",
       "Art Prints",
       "Canvas Prints",
@@ -45,6 +47,7 @@
     "id": "05",
     "category": "Home & Living",
     "subcategories": [
+      "All",
       "Acrylic Blocks",
       "Bedding",
       "Clocks",
@@ -58,6 +61,7 @@
     "id": "06",
     "category": "Stationery & Office",
     "subcategories": [
+      "All",
       "Greeting Cards",
       "Hardcover Journals",
       "Postcards",
@@ -68,6 +72,7 @@
     "id": "07",
     "category": "Accessories",
     "subcategories": [
+      "All",
       "Backpacks",
       "Drawstring Bags",
       "Scarves",

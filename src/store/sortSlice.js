@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import products from "../data/products.json";
+import categories from "../data/productFields.json";
 
 const sortSlice = createSlice({
   name: "sort",
@@ -43,24 +44,29 @@ const sortSlice = createSlice({
     },
     filterProducts(state, action) {
       state.filter = action.payload;
-      switch (action.payload) {
-        case "none":
-          state.filtered_products = state.all_products;
-          break;
-        case "Phone Cases":
-          state.filtered_products = state.filtered_products.filter(
-            (product) => {
-              console.log(product.category);
-              return product.category === state.filter;
-            }
-          );
-          break;
+      if (action.payload !== "none") {
+        const categoryDetails = categories.find((category) => {
+          return category.category === action.payload;
+        });
+        console.log(categoryDetails);
+        state.subCategories = categoryDetails.subcategories;
+      } else {
+        state.subCategories = [];
+      }
+
+      if (action.payload === "none") {
+        state.filtered_products = state.all_products;
+      } else {
+        state.filtered_products = state.filtered_products.filter((product) => {
+          console.log(product.category);
+          return product.category === state.filter;
+        });
       }
     },
     filterSubProducts(state, action) {
-      return state.filtered_products.filter((product) => {
-        return product.action.payload === 
-      })
+      state.filtered_products = state.filtered_products.filter((product) => {
+        return product.subcategory === action.payload;
+      });
     },
   },
 });

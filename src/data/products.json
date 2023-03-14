@@ -102,11 +102,321 @@
   {
     "id": "08",
     "category": "Phone Cases",
-    "subcategory": "Samsung Cases",
+    "subcategory": "Samsung",
     "name": "Splatter Logo Blue/Yellow - Samsung Case",
     "price": 2380,
     "imageMain": "/assets/productImages/PhoneCases/Samsung/hungryBlueYellowSamsungMain.jpg",
     "colors": {},
     "description": "Triple arrow logo splatter yellow blue gradient"
+  },
+  {
+    "id": "09",
+    "category": "Phone Cases",
+    "subcategory": "iPhone",
+    "name": "Wilderness Fitness iPhone Tough Case",
+    "price": 3467,
+    "imageMain": "/assets/productImages/PhoneCases/iPhone/wildernessToughCase.jpg",
+    "colors": {},
+    "description": "A cool graphic of a weightlifter with a frame pack loaded up with a set of elk antlers, standing in front of a pine forest. (dark trees, light character) This image will show up best on a non white backdrop."
+  },
+  {
+    "id": "10",
+    "category": "Phone Cases",
+    "subcategory": "iPhone",
+    "name": "Still Breathing iPhone Tough Case",
+    "price": 3467,
+    "imageMain": "/assets/productImages/PhoneCases/iPhone/stillBreathingCase.jpg",
+    "colors": {},
+    "description": "Still breathing logo with a mountain and forest background and blue/purple gradient."
+  },
+  {
+    "id": "11",
+    "category": "Stickers",
+    "subcategory": "",
+    "name": "Arrow Splatter Sticker",
+    "price": 135,
+    "imageMain": "/assets/productImages/Stickers/tripArrowSplatterGradient.jpg",
+    "colors": {},
+    "description": "Triple arrow logo with gradient splatter."
+  },
+  {
+    "id": "12",
+    "category": "Stickers",
+    "subcategory": "",
+    "name": "Still Breathing Sticker",
+    "price": 135,
+    "imageMain": "/assets/productImages/Stickers/stillBreathingSplatterGradient.jpg",
+    "colors": {},
+    "description": "Still breathing logo with a mountain and forest background and blue/purple gradient."
+  },
+  {
+    "id": "13",
+    "category": "Wall Art",
+    "subcategory": "Art Board Prints",
+    "name": "Far Blue Mountains Art Board Print",
+    "price": 832,
+    "imageMain": "/assets/productImages/WallArt/ArtBoardPrints/blueMountainBoardPrint.jpg",
+    "colors": {},
+    "description": "Original acrylic on canvas of mountains."
+  },
+  {
+    "id": "14",
+    "category": "Wall Art",
+    "subcategory": "Art Board Prints",
+    "name": "Only Good Days w/ Blue/Orange Gradient Art Board Print",
+    "price": 832,
+    "imageMain": "/assets/productImages/WallArt/ArtBoardPrints/goodDaysOnlyBoardPrint.jpg",
+    "colors": {},
+    "description": "Can't have the good without the bad. only good days."
+  },
+  {
+    "id": "15",
+    "category": "Wall Art",
+    "subcategory": "Art Prints",
+    "name": "Crossed Antlers Logo Art Print",
+    "price": 2963,
+    "imageMain": "/assets/productImages/WallArt/ArtPrints/crossedAntlerArtPrint.jpg",
+    "colors": {},
+    "description": "Crossed antlers logo."
+  },
+  {
+    "id": "16",
+    "category": "Wall Art",
+    "subcategory": "Canvas Prints",
+    "name": "Grin and Bear - Black Logo Canvas Print",
+    "price": 7511,
+    "imageMain": "/assets/productImages/WallArt/CanvasPrints/grinBearBlackCanvasPrint.jpg",
+    "colors": {},
+    "description": "Grin and Bear."
+  },
+  {
+    "id": "17",
+    "category": "Wall Art",
+    "subcategory": "Framed Prints",
+    "name": "Arrow Splatter Framed Art Print",
+    "price": 9244,
+    "imageMain": "/assets/productImages/WallArt/FramedPrints/arrowSplatterPurpleOrangeGradientFramed.jpg",
+    "colors": {},
+    "description": "My logo, gradient splatter."
+  },
+  {
+    "id": "18",
+    "category": "Wall Art",
+    "subcategory": "Metal Prints",
+    "name": "Wilderness Fitness (Dark) Metal Print",
+    "price": 12247,
+    "imageMain": "/assets/productImages/WallArt/MetalPrints/wildernessFitnessDarkMetalPrint.jpg",
+    "colors": {},
+    "description": "Cool graphic of a weight lifter carrying a frame pack loaded with elk antlers, standing in front of the woods."
+  },
+  {
+    "id": "19",
+    "category": "Wall Art",
+    "subcategory": "Photogenic Prints",
+    "name": "Chrysantheum Arrow Logo Photographic Print",
+    "price": 1470,
+    "imageMain": "/assets/productImages/WallArt/PhotogenicPrints/chrysantheumArrowSplatterPhotographicPrint.jpg",
+    "colors": {},
+    "description": "My arrow logo, pink and green splatter gradient."
+  },
+  {
+    "id": "20",
+    "category": "Wall Art",
+    "subcategory": "Posters",
+    "name": "Far Blue Mountains Poster",
+    "price": 2513,
+    "imageMain": "/assets/productImages/WallArt/Posters/blueMountainsPoster.jpg",
+    "colors": {},
+    "description": "Original acrylic on canvas of mountains."
+  },
+  {
+    "id": "21",
+    "category": "Home & Living",
+    "subcategory": "Acrylic Blocks",
+    "name": "Hungry with Arrow Logo on Acrylic Block",
+    "price": 4356,
+    "imageMain": "/assets/productImages/HomeLiving/AcrylicBlocks/hungryArrowLogoAcrylicBlock.jpg",
+    "colors": {},
+    "description": "Hungry with Arrow logo and blue/yellow gradient on an acrylic block."
+  },
+  {
+    "id": "22",
+    "category": "Home & Living",
+    "subcategory": "Bedding",
+    "name": "Wilderness Fitness Duvet Cover",
+    "price": 12070,
+    "imageMain": "/assets/productImages/HomeLiving/Bedding/wildernessFitnessCover.jpg",
+    "colors": {},
+    "description": "A cool graphic of a weightlifter with a frame pack loaded up with a set of elk antlers, standing in front of a pine forest. (dark trees, light character) This image will show up best on a non white backdrop."
+  },
+  {
+    "id": "23",
+    "category": "Home & Living",
+    "subcategory": "Clocks",
+    "name": "Orange Splatter Arrow Logo Clock",
+    "price": 3416,
+    "imageMain": "/assets/productImages/HomeLiving/Clocks/orangeArrowLogoClock.jpg",
+    "colors": {},
+    "description": "Orange splatter arrow logo clock."
+  },
+  {
+    "id": "24",
+    "category": "Home & Living",
+    "subcategory": "Magnets",
+    "name": "Bad Canyon Designs Magnet",
+    "price": 790,
+    "imageMain": "/assets/productImages/HomeLiving/Magnets/badCanyonDesignsMagnet.jpg",
+    "colors": {},
+    "description": "Yellow logo and arrow."
+  },
+  {
+    "id": "25",
+    "category": "Home & Living",
+    "subcategory": "Mugs",
+    "name": "Still Breathing Travel Coffee Mug",
+    "price": 2848,
+    "imageMain": "/assets/productImages/HomeLiving/Mugs/stillBreathingTravelMug.jpg",
+    "colors": {},
+    "description": "Blue/purple gradient with mountain background and 'Still Breathing' on the forefront splade on an insulated travel mug."
+  },
+  {
+    "id": "26",
+    "category": "Home & Living",
+    "subcategory": "Pillows & Cushions",
+    "name": "Pink/Orange Good Days Only Throw Pillow",
+    "price": 1886,
+    "imageMain": "/assets/productImages/HomeLiving/PillowsCushions/goodDaysThrowPillow.jpg",
+    "colors": {},
+    "description": "Grin and Bear."
+  },
+  {
+    "id": "27",
+    "category": "Home & Living",
+    "subcategory": "Tapestries",
+    "name": "Wilderness Fitness (Dark) Tapestry",
+    "price": 4999,
+    "imageMain": "/assets/productImages/HomeLiving/Tapestries/wildernessFitnessDarkTapestry.jpg",
+    "colors": {},
+    "description": "Cool graphic of a weight lifter carrying a frame pack loaded with elk antlers, standing in front of the woods."
+  },
+  {
+    "id": "28",
+    "category": "Stationery & Office",
+    "subcategory": "Greeting Cards",
+    "name": "Far Blue Mountains Greeting Card",
+    "price": 219,
+    "imageMain": "/assets/productImages/StationeryOffice/GreetingCards/blueMountainGreetingCard.jpg",
+    "colors": {},
+    "description": "Original acrylic on canvas of mountains."
+  },
+  {
+    "id": "29",
+    "category": "Stationery & Office",
+    "subcategory": "Hardcover Journals",
+    "name": "Chrysantheum Hardcover Journal",
+    "price": 2291,
+    "imageMain": "/assets/productImages/StationeryOffice/HardcoverJournals/chrysantheumHardcoverJournal.jpg",
+    "colors": {},
+    "description": "My arrow logo, pink and green splatter gradient."
+  },
+  {
+    "id": "30",
+    "category": "Stationery & Office",
+    "subcategory": "Postcards",
+    "name": "Bad Canyon Designs Postcard",
+    "price": 171,
+    "imageMain": "/assets/productImages/StationeryOffice/Postcards/badCanyonDesignsPostcard.jpg",
+    "colors": {},
+    "description": "Yellow logo and arrow."
+  },
+  {
+    "id": "31",
+    "category": "Stationery & Office",
+    "subcategory": "Spiral Notebooks",
+    "name": "Crossed Antlers Logo Spiral Notebook",
+    "price": 1199,
+    "imageMain": "/assets/productImages/StationeryOffice/SpiralNotebooks/crossedAntlersSpiralNotebook.jpg",
+    "colors": {},
+    "description": "Crossed antlers logo."
+  },
+  {
+    "id": "32",
+    "category": "Accessories",
+    "subcategory": "Backpacks",
+    "name": "Crossed Antlers Logo Backpack",
+    "price": 5000,
+    "imageMain": "/assets/productImages/Accessories/Backpacks/crossedAntlersBackpack.jpg",
+    "colors": {},
+    "description": "Crossed antlers logo."
+  },
+  {
+    "id": "33",
+    "category": "Accessories",
+    "subcategory": "Drawstring Bags",
+    "name": "Grin and Bear White Logo Drawstring Bag",
+    "price": 3383,
+    "imageMain": "/assets/productImages/Accessories/DrawstringBags/grinBearDrawstringBag.jpg",
+    "colors": {},
+    "description": "Grin and Bear."
+  },
+  {
+    "id": "34",
+    "category": "Accessories",
+    "subcategory": "Scarves",
+    "name": "Purple/Orange Arrow Splatter Scarf",
+    "price": 2505,
+    "imageMain": "/assets/productImages/Accessories/Scarves/purpleOrangeArrowSplatterScarf.jpg",
+    "colors": {},
+    "description": "My logo, gradient splatter."
+  },
+  {
+    "id": "35",
+    "category": "Accessories",
+    "subcategory": "Socks",
+    "name": "Dark Still Breathing Socks",
+    "price": 1292,
+    "imageMain": "/assets/productImages/Accessories/Socks/purpleStillBreathingSocks.jpg",
+    "colors": {},
+    "description": "Purple Still Breathing logo on black socks."
+  },
+  {
+    "id": "36",
+    "category": "Accessories",
+    "subcategory": "Tech Accessories",
+    "name": "Far Blue Mountains iPad Snap Case",
+    "price": 5000,
+    "imageMain": "/assets/productImages/Accessories/TechAccessories/blueMountainsIpadCase.jpg",
+    "colors": {},
+    "description": "Original acrylic on canvas of mountains."
+  },
+  {
+    "id": "37",
+    "category": "Accessories",
+    "subcategory": "Tote Bags",
+    "name": "Blue/Yellow Gradient Arrow Logo Tote Bag",
+    "price": 2156,
+    "imageMain": "/assets/productImages/Accessories/ToteBags/blueYellowArrowLogoTote.jpg",
+    "colors": {},
+    "description": "Blue/Yellow gradient arrow logo on a tote bag."
+  },
+  {
+    "id": "38",
+    "category": "Accessories",
+    "subcategory": "Water Bottles",
+    "name": "Still Breathing Water Bottle",
+    "price": 2076,
+    "imageMain": "/assets/productImages/Accessories/WaterBottles/bluePurpleStillBreathingWaterBottle.jpg",
+    "colors": {},
+    "description": "Blue/Purple gradient Still Breathing logo on a stainless steel water bottle."
+  },
+  {
+    "id": "39",
+    "category": "Accessories",
+    "subcategory": "Zipper Pouches",
+    "name": "Bad Canyon Designs Zipper Pouch",
+    "price": 1151,
+    "imageMain": "/assets/productImages/Accessories/ZipperPouches/badCanyonDesignsZipperPouch.jpg",
+    "colors": {},
+    "description": "Yellow logo and arrow."
   }
 ]

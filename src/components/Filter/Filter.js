@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { sortActions } from "../../store/sortSlice";
 import categories from "../../data/productFields.json";
 
 const Filter = () => {
-  const { filter, subCategories } = useSelector((state) => state.sort.filter);
+  const { filter, subCategories } = useSelector((state) => state.sort);
   const dispatch = useDispatch();
 
   const setFilter = (e) => {
@@ -14,17 +14,6 @@ const Filter = () => {
   const setSubFilter = (e) => {
     dispatch(sortActions.filterSubProducts(e.target.value));
   };
-
-  useEffect(() => {
-    if (filter === "none") {
-      return;
-    } else {
-      const filteredCategories = categories.find((category) => {
-        return category.category === filter;
-      });
-      return setSubCategories(filteredCategories.subcategories);
-    }
-  }, [filter]);
 
   return (
     <aside className="text-white">
@@ -52,7 +41,12 @@ const Filter = () => {
             })
           : subCategories.map((subCategory, i) => {
               return (
-                <button key={i} className="d-block ps-3" value={subCategory}>
+                <button
+                  key={i}
+                  className="d-block ps-3"
+                  value={subCategory}
+                  onClick={setSubFilter}
+                >
                   {subCategory}
                 </button>
               );
