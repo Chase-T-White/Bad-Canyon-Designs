@@ -10,6 +10,7 @@ const sortSlice = createSlice({
     sort: "none",
     filter: "none",
     subCategories: [],
+    subFiltered_products: [],
   },
   reducers: {
     sortProducts(state, action) {
@@ -48,7 +49,6 @@ const sortSlice = createSlice({
         const categoryDetails = categories.find((category) => {
           return category.category === action.payload;
         });
-        console.log(categoryDetails);
         state.subCategories = categoryDetails.subcategories;
       } else {
         state.subCategories = [];
@@ -58,15 +58,20 @@ const sortSlice = createSlice({
         state.filtered_products = state.all_products;
       } else {
         state.filtered_products = state.filtered_products.filter((product) => {
-          console.log(product.category);
           return product.category === state.filter;
         });
+        state.subFiltered_products = state.filtered_products;
       }
     },
     filterSubProducts(state, action) {
-      state.filtered_products = state.filtered_products.filter((product) => {
-        return product.subcategory === action.payload;
-      });
+      if (action.payload.toLowerCase() === "all") {
+        state.filtered_products = state.subFiltered_products;
+      } else {
+        state.filtered_products = state.subFiltered_products;
+        state.filtered_products = state.filtered_products.filter((product) => {
+          return product.subcategory === action.payload;
+        });
+      }
     },
   },
 });

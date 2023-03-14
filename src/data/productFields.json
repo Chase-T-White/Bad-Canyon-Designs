@@ -3,20 +3,13 @@
     "id": "01",
     "category": "Clothing",
     "subcategories": [
-      {
-        "gender": ["All", "Male", "Female"]
-      },
-      {
-        "style": [
-          "All",
-          "Dresses",
-          "Leggings",
-          "Mini Skirt",
-          "Sweatshirts & Hoodies",
-          "T-Shirts",
-          "Tank Tops"
-        ]
-      }
+      "All",
+      "Dresses",
+      "Leggings",
+      "Mini Skirt",
+      "Sweatshirts & Hoodies",
+      "T-Shirts",
+      "Tank Tops"
     ]
   },
   {
