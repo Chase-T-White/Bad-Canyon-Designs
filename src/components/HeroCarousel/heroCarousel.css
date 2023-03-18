@@ -1,0 +1,14 @@
+.carousel {
+  max-height: 100%;
+  overflow-y: hidden;
+}
+
+.carousel-item {
+  height: calc(100vh - 58px);
+}
+
+.carousel-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}

@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { authActions } from "../../store/authSlice";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
+import "./navbar.css";
 
 const NavigationBar = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
@@ -23,29 +24,39 @@ const NavigationBar = () => {
   };
 
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand>
-          <Link to={"/"}>Bad Canyon Designs</Link>
+    <Navbar expand="md" className="bg-dark bg-opacity-75">
+      <Container fluid="xl">
+        <Navbar.Brand className="fs-2 fw-bold me-5">
+          <Link to={"/"} className="text-decoration-none text-white">
+            Bad Canyon Designs
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to={"shop"}>Shop</Link>
-            <Link to={"gallery"}>Gallery</Link>
-            <Link to={"story"}>Story</Link>
-            <Link to={"studio"}>Studio</Link>
+            <Link to={"shop"} className="nav-link">
+              Shop
+            </Link>
+            <Link to={"gallery"} className="nav-link">
+              Gallery
+            </Link>
+            <Link to={"story"} className="nav-link">
+              Story
+            </Link>
+            <Link to={"studio"} className="nav-link">
+              Studio
+            </Link>
           </Nav>
-          <Nav className="me-auto">
+          <Nav className="justify-content-end align-items-end">
+            <div className="cart-container">
+              <Link to={"cart"}>
+                <HiOutlineShoppingCart className="cart-button" />
+              </Link>
+              <div className="cart-amount">{amount}</div>
+            </div>
             <Button className="link text-white" onClick={handleUserLog}>
               {isLoggedIn ? "Logout" : "Login"}
             </Button>
-            <Link to={"cart"}>
-              <Button>
-                <HiOutlineShoppingCart />
-                {amount}
-              </Button>
-            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,0 +1,57 @@
+.nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ffffff8a;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.05rem;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-link + .nav-link {
+  margin-left: 1.2rem;
+}
+
+.cart-container {
+  display: flex;
+  height: 100%;
+  position: relative;
+  margin-right: 1rem;
+  isolation: isolate;
+}
+
+.cart-button {
+  font-size: 2rem;
+}
+
+.cart-amount {
+  position: absolute;
+  top: -0.3rem;
+  right: -0.4rem;
+
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 100rem;
+}
