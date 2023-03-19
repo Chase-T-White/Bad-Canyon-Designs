@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import "./studio.css";
 
 const Studio = () => {
   return (
@@ -15,47 +16,8 @@ const Studio = () => {
           </p>
         </Container>
       </header>
-      <section>
-        <Container>
-          <Row className="align-items-center">
-            <Col className="quote text-white">
-              <div>
-                <p>
-                  "My art studio is my sanctuary. It's a place where I can
-                  express my creativity and explore my artistic vision. I feel
-                  free and inspired when I'm in my studio, and I'm never more
-                  alive than when I'm creating something new."
-                </p>
-              </div>
-            </Col>
-            <Col>
-              <Image
-                fluid
-                src="../../assets/Studio/hatArt.jpg"
-                className="h-100"
-                style={{ objectFit: "cover" }}
-              ></Image>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Image
-                fluid
-                src="../../assets/Studio/bearwArtist.jpg"
-                className="h-100"
-                style={{ objectFit: "cover" }}
-              ></Image>
-            </Col>
-            <Col>
-              <Image
-                fluid
-                src="../../assets/Studio/buffwArtist.jpg"
-                className="h-100"
-                style={{ objectFit: "cover" }}
-              ></Image>
-            </Col>
-          </Row>
-        </Container>
+      <section className="studio-intro">
+        <canvas id="canvas1"></canvas>
       </section>
       <section>
         <Container>
@@ -64,9 +26,8 @@ const Studio = () => {
             width={440}
             height={476}
             style={{ border: "none", overflow: "hidden" }}
-            allowfullscreen="true"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            allowFullScreen="true"
+            allowFullScreen={true}
           ></iframe>
         </Container>
       </section>

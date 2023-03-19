@@ -13,8 +13,10 @@ import {
 } from "./pages";
 import { NavigationBar, Footer } from "./components";
 import { useSelector } from "react-redux";
+import useScript from "./hooks/useScript";
 
 function App() {
+  useScript("/scripts/pixelEffects.js");
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   return (
     <BrowserRouter>
