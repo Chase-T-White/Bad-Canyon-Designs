@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Rubik:wght@300;400;700&display=swap");
 
 body {
   margin: 0;
@@ -7,15 +7,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../public/assets/herobg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #0a0201;
+  color: #fff;
 }
 
 section,
 header {
   margin-bottom: 8rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.section-header {
+  text-shadow: 0 0 1rem #fff;
 }
 
 /* Studio */

@@ -1,7 +1,47 @@
-.collage-quote {
-  background-image: url(../../../public/assets/misc/quotebg1.jpg);
-  width: calc(100% - 24px);
+.gallery-row {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-row:nth-child(even) {
+  justify-content: end;
+}
+
+.gallery-img-container {
+  max-width: 80%;
   height: 100%;
-  display: flex;
-  align-items: center;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.galleries-img {
+  width: 120%;
+  position: absolute;
+}
+
+.gal-img__1 {
+  top: -50%;
+  transform: translateY(-50%);
+}
+
+.gal-img__2 {
+  top: -20%;
+  transform: translateY(-40%);
+}
+
+.gal-img__3 {
+  top: -20%;
+  transform: translateY(-20%);
+}
+
+.gal-img__4 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gal-img__5 {
+  top: 50%;
+  transform: translateY(-35%);
 }

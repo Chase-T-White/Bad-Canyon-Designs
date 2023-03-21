@@ -1,3 +1,25 @@
 .hero {
   height: calc(100vh - 55px);
+  background-image: url(../../../public/assets/herobg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-transition {
+  height: 30rem;
+  background-size: 50rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.transition-1 {
+  background-image: linear-gradient(#0a0201cc, #0a0201cc),
+    url(/public/assets/backgroundImg1.jpg);
+}
+
+.transition-2 {
+  background-image: linear-gradient(#0a0201cc, #0a0201cc),
+    url(/public/assets/backgroundImg2.jpg);
 }

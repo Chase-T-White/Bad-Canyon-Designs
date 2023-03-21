@@ -1,6 +1,7 @@
 export { default as Footer } from "./Footer/Footer";
 export { default as Transition } from "./TransitionQuote/Transition";
 export { default as Collage } from "./Collage/Collage";
+export { default as Events } from "./Events/Events";
 export { default as Product } from "./Product/Product";
 export { default as ProductList } from "./ProductList/ProductList";
 export { default as Sort } from "./Sort/Sort";

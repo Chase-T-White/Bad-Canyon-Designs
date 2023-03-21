@@ -1,0 +1,26 @@
+/* .events {
+  background: #0a0201;
+  background: linear-gradient(
+    #0a0201 25%,
+    #66241a 50%,
+    #66241a 50%,
+    #0a0201 75%
+  );
+} */
+
+.events-card {
+  background: #0a0201;
+  background: linear-gradient(
+    #0a0201 25%,
+    #66241a 50%,
+    #66241a 50%,
+    #0a0201 75%
+  );
+  box-shadow: 0.4rem 0.4rem 0.2rem #66241a;
+  /* background: linear-gradient(
+    #0a0201cc 20%,
+    #0a02012d 50%,
+    #0a02012d 50%,
+    #0a0201cc 75%
+  ); */
+}

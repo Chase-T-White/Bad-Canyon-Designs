@@ -29,7 +29,7 @@ image1.addEventListener("load", function () {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   let particlesArray = [];
-  const numberOfParticles = 3500;
+  const numberOfParticles = 1500;
 
   let mappedImage = [];
   for (let y = 0; y < canvas.height; y++) {
@@ -39,7 +39,10 @@ image1.addEventListener("load", function () {
       const green = pixels.data[y * 4 * pixels.width + (x * 4 + 1)];
       const blue = pixels.data[y * 4 * pixels.width + (x * 4 + 2)];
       const brightness = calculateRelativeBrightness(red, green, blue);
-      const cell = [(cellBrightness = brightness)];
+      const cell = [
+        (cellBrightness = brightness),
+        (cellColor = "rgb(" + red + "," + green + "," + blue + ")"),
+      ];
       row.push(cell);
     }
     mappedImage.push(row);
@@ -69,17 +72,23 @@ image1.addEventListener("load", function () {
       this.position2 = Math.floor(this.x);
       this.speed = mappedImage[this.position1][this.position2][0];
       let movement = 3.5 - this.speed + this.velocity;
+      // ctx.globalCompositeOperation = "hard-light";
       this.y += movement;
+      this.x += movement;
       if (this.y >= canvas.height) {
         this.y = 0;
         this.x = Math.random() * canvas.width;
+      }
+      if (this.x >= canvas.width) {
+        this.x = 0;
+        this.y = Math.random() * canvas.height;
       }
     }
 
     draw() {
       ctx.beginPath();
-      (ctx.fillStyle = "white"),
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = mappedImage[this.position1][this.position2][1];
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
       ctx.fill();
     }
   }
