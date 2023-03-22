@@ -1,0 +1,7 @@
+.piece-section {
+  background-image: url(/public/assets/herobg.jpg);
+}
+
+.piece-img {
+  box-shadow: 0.4rem 0.4rem 0.2rem #b8b6973b;
+}

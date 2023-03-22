@@ -1,0 +1,935 @@
+[
+  {
+    "landscapes&Nature": [
+      {
+        "id": "1",
+        "category": "landscape",
+        "title": "land1",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery1.jpg"
+      },
+      {
+        "id": "2",
+        "category": "landscape",
+        "title": "land2",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery2.jpg"
+      },
+      {
+        "id": "3",
+        "category": "landscape",
+        "title": "land3",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery3.jpg"
+      },
+      {
+        "id": "4",
+        "category": "landscape",
+        "title": "land4",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery4.jpg"
+      },
+      {
+        "id": "5",
+        "category": "landscape",
+        "title": "land5",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery5.jpg"
+      },
+      {
+        "id": "6",
+        "category": "landscape",
+        "title": "land6",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery6.jpg"
+      },
+      {
+        "id": "7",
+        "category": "landscape",
+        "title": "land7",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery7.jpg"
+      },
+      {
+        "id": "8",
+        "category": "landscape",
+        "title": "land8",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery8.jpg"
+      },
+      {
+        "id": "9",
+        "category": "landscape",
+        "title": "land9",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery9.jpg"
+      },
+      {
+        "id": "10",
+        "category": "landscape",
+        "title": "land10",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery10.jpg"
+      },
+      {
+        "id": "11",
+        "category": "landscape",
+        "title": "land11",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery11.jpg"
+      },
+      {
+        "id": "12",
+        "category": "landscape",
+        "title": "land12",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery12.jpg"
+      },
+      {
+        "id": "13",
+        "category": "landscape",
+        "title": "land13",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery13.jpg"
+      },
+      {
+        "id": "14",
+        "category": "landscape",
+        "title": "land14",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery14.jpg"
+      },
+      {
+        "id": "15",
+        "category": "landscape",
+        "title": "land15",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery15.jpg"
+      },
+      {
+        "id": "16",
+        "category": "landscape",
+        "title": "land16",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery16.jpg"
+      },
+      {
+        "id": "17",
+        "category": "landscape",
+        "title": "land17",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery17.jpg"
+      },
+      {
+        "id": "18",
+        "category": "landscape",
+        "title": "land18",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery18.jpg"
+      },
+      {
+        "id": "19",
+        "category": "landscape",
+        "title": "land19",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery19.jpg"
+      },
+      {
+        "id": "20",
+        "category": "landscape",
+        "title": "land20",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery20.jpg"
+      },
+      {
+        "id": "21",
+        "category": "landscape",
+        "title": "land21",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery21.jpg"
+      },
+      {
+        "id": "22",
+        "category": "landscape",
+        "title": "land22",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery22.jpg"
+      },
+      {
+        "id": "23",
+        "category": "landscape",
+        "title": "land23",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery23.jpg"
+      },
+      {
+        "id": "24",
+        "category": "landscape",
+        "title": "land24",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery24.jpg"
+      },
+      {
+        "id": "25",
+        "category": "landscape",
+        "title": "land25",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery25.jpg"
+      },
+      {
+        "id": "26",
+        "category": "landscape",
+        "title": "land26",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery26.jpg"
+      },
+      {
+        "id": "27",
+        "category": "landscape",
+        "title": "land27",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery27.jpg"
+      },
+      {
+        "id": "28",
+        "category": "landscape",
+        "title": "land28",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Landscapes&Nature/gallery28.jpg"
+      }
+    ]
+  },
+  {
+    "animals": [
+      {
+        "id": "1",
+        "category": "animals",
+        "title": "animal1",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal1.jpg"
+      },
+      {
+        "id": "2",
+        "category": "animals",
+        "title": "animal2",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal2.jpg"
+      },
+      {
+        "id": "3",
+        "category": "animals",
+        "title": "animal3",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal3.jpg"
+      },
+      {
+        "id": "4",
+        "category": "animals",
+        "title": "animal4",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal4.jpg"
+      },
+      {
+        "id": "5",
+        "category": "animals",
+        "title": "animal5",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal5.jpg"
+      },
+      {
+        "id": "6",
+        "category": "animals",
+        "title": "animal6",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal6.jpg"
+      },
+      {
+        "id": "7",
+        "category": "animals",
+        "title": "animal7",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal7.jpg"
+      },
+      {
+        "id": "8",
+        "category": "animals",
+        "title": "animal8",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal8.jpg"
+      },
+      {
+        "id": "9",
+        "category": "animals",
+        "title": "animal9",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal9.jpg"
+      },
+      {
+        "id": "10",
+        "category": "animals",
+        "title": "animal10",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal10.jpg"
+      },
+      {
+        "id": "11",
+        "category": "animals",
+        "title": "animal11",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal11.jpg"
+      },
+      {
+        "id": "12",
+        "category": "animals",
+        "title": "animal12",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal12.jpg"
+      },
+      {
+        "id": "13",
+        "category": "animals",
+        "title": "animal13",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal13.jpg"
+      },
+      {
+        "id": "14",
+        "category": "animals",
+        "title": "animal14",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal14.jpg"
+      },
+      {
+        "id": "15",
+        "category": "animals",
+        "title": "animal15",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal15.jpg"
+      },
+      {
+        "id": "16",
+        "category": "animals",
+        "title": "animal16",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal16.jpg"
+      },
+      {
+        "id": "17",
+        "category": "animals",
+        "title": "animal17",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal17.jpg"
+      },
+      {
+        "id": "18",
+        "category": "animals",
+        "title": "animal18",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal18.jpg"
+      },
+      {
+        "id": "19",
+        "category": "animals",
+        "title": "animal19",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal19.jpg"
+      },
+      {
+        "id": "20",
+        "category": "animals",
+        "title": "animal20",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal20.jpg"
+      },
+      {
+        "id": "21",
+        "category": "animals",
+        "title": "animal21",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal21.jpg"
+      },
+      {
+        "id": "22",
+        "category": "animals",
+        "title": "animal22",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal22.jpg"
+      },
+      {
+        "id": "23",
+        "category": "animals",
+        "title": "animal23",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal23.jpg"
+      },
+      {
+        "id": "24",
+        "category": "animals",
+        "title": "animal24",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal24.jpg"
+      },
+      {
+        "id": "25",
+        "category": "animals",
+        "title": "animal25",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal25.jpg"
+      },
+      {
+        "id": "26",
+        "category": "animals",
+        "title": "animal26",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal26.jpg"
+      },
+      {
+        "id": "27",
+        "category": "animals",
+        "title": "animal27",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Animals/animal27.jpg"
+      }
+    ]
+  },
+  {
+    "people": [
+      {
+        "id": "1",
+        "category": "people",
+        "title": "people1",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/People/people1.jpg"
+      },
+      {
+        "id": "2",
+        "category": "people",
+        "title": "people2",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/People/people2.jpg"
+      },
+      {
+        "id": "3",
+        "category": "people",
+        "title": "people3",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/People/people3.jpg"
+      },
+      {
+        "id": "4",
+        "category": "people",
+        "title": "people4",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/People/people4.jpg"
+      },
+      {
+        "id": "5",
+        "category": "people",
+        "title": "people5",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/People/people5.jpg"
+      },
+      {
+        "id": "6",
+        "category": "people",
+        "title": "people6",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/People/people6.jpg"
+      },
+      {
+        "id": "7",
+        "category": "people",
+        "title": "people7",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/People/people7.jpg"
+      },
+      {
+        "id": "8",
+        "category": "people",
+        "title": "people8",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/People/people8.jpg"
+      },
+      {
+        "id": "9",
+        "category": "people",
+        "title": "people9",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/People/people9.jpg"
+      }
+    ]
+  },
+  {
+    "abstract": [
+      {
+        "id": "1",
+        "category": "abstract",
+        "title": "abstract1",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract1.jpg"
+      },
+      {
+        "id": "2",
+        "category": "abstract",
+        "title": "abstract2",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract2.jpg"
+      },
+      {
+        "id": "3",
+        "category": "abstract",
+        "title": "abstract3",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract3.jpg"
+      },
+      {
+        "id": "4",
+        "category": "abstract",
+        "title": "abstract4",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract4.jpg"
+      },
+      {
+        "id": "5",
+        "category": "abstract",
+        "title": "abstract5",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract5.jpg"
+      },
+      {
+        "id": "6",
+        "category": "abstract",
+        "title": "abstract6",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract6.jpg"
+      },
+      {
+        "id": "7",
+        "category": "abstract",
+        "title": "abstract7",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract7.jpg"
+      },
+      {
+        "id": "8",
+        "category": "abstract",
+        "title": "abstract8",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract8.jpg"
+      },
+      {
+        "id": "9",
+        "category": "abstract",
+        "title": "abstract9",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract9.jpg"
+      },
+      {
+        "id": "10",
+        "category": "abstract",
+        "title": "abstract10",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract10.jpg"
+      },
+      {
+        "id": "11",
+        "category": "abstract",
+        "title": "abstract11",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract11.jpg"
+      },
+      {
+        "id": "12",
+        "category": "abstract",
+        "title": "abstract12",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract12.jpg"
+      },
+      {
+        "id": "13",
+        "category": "abstract",
+        "title": "abstract13",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract13.jpg"
+      },
+      {
+        "id": "14",
+        "category": "abstract",
+        "title": "abstract14",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Abstract/abstract14.jpg"
+      }
+    ]
+  },
+  {
+    "crafts": [
+      {
+        "id": "1",
+        "category": "crafts",
+        "title": "craft1",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Crafts/craft1.jpg"
+      },
+      {
+        "id": "2",
+        "category": "crafts",
+        "title": "craft2",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Crafts/craft2.jpg"
+      },
+      {
+        "id": "3",
+        "category": "crafts",
+        "title": "craft3",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Crafts/craft3.jpg"
+      },
+      {
+        "id": "4",
+        "category": "crafts",
+        "title": "craft4",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Crafts/craft4.jpg"
+      },
+      {
+        "id": "5",
+        "category": "crafts",
+        "title": "craft5",
+        "price": 8500,
+        "dimensions": "12' x 14'",
+        "description": "description of painting",
+        "available": true,
+        "sale": false,
+        "image": "/assets/Gallery/Crafts/craft5.jpg"
+      }
+    ]
+  }
+]

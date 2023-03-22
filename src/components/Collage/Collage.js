@@ -74,7 +74,7 @@ const Collage = () => {
           <Col className="gallery-img-container" xs={11}>
             <Image
               fluid
-              src="../../assets/Collages/recentWorks6.jpg"
+              src="../../assets/Collages/recentWorks9.jpg"
               className="galleries-img gal-img__5"
             ></Image>
             <div className="hover-box">

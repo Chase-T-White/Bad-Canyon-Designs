@@ -48,13 +48,17 @@
 .icon-container {
   display: flex;
   align-items: center;
-  justify-content: start;
-  transform: translateX(100%);
+  justify-content: end;
   transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.gallery-row:nth-child(even) .icon-container {
+  transform: translateX(100%);
 }
 
 .gallery-row:nth-child(odd) .icon-container {
-  transform: translateX(-20%);
+  transform: translateX(-100%);
 }
 
 .gallery-icon {
@@ -103,6 +107,6 @@
 }
 
 .gal-img__5 {
-  top: 50%;
+  top: 100%;
   transform: translateY(-35%);
 }
