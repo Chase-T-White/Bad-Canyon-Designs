@@ -4,6 +4,7 @@ import authSlice from "./authSlice";
 import cartSlice from "./cartSlice";
 import viewSlice from "./viewSlice";
 import sortSlice from "./sortSlice";
+import gallerySlice from "./gallerySlice";
 
 export default configureStore({
   reducer: {
@@ -12,5 +13,6 @@ export default configureStore({
     cart: cartSlice.reducer,
     view: viewSlice.reducer,
     sort: sortSlice.reducer,
+    gallery: gallerySlice.reducer,
   },
 });
