@@ -1,6 +1,6 @@
 [
   {
-    "landscapes&nature": [
+    "landscapes_nature": [
       {
         "id": "1",
         "category": "landscape",
@@ -309,9 +309,7 @@
         "sale": false,
         "image": "/assets/Gallery/Landscapes&Nature/gallery28.jpg"
       }
-    ]
-  },
-  {
+    ],
     "animals": [
       {
         "id": "1",
@@ -610,9 +608,7 @@
         "sale": false,
         "image": "/assets/Gallery/Animals/animal27.jpg"
       }
-    ]
-  },
-  {
+    ],
     "people": [
       {
         "id": "1",
@@ -713,9 +709,7 @@
         "sale": false,
         "image": "/assets/Gallery/People/people9.jpg"
       }
-    ]
-  },
-  {
+    ],
     "abstract": [
       {
         "id": "1",
@@ -871,9 +865,7 @@
         "sale": false,
         "image": "/assets/Gallery/Abstract/abstract14.jpg"
       }
-    ]
-  },
-  {
+    ],
     "crafts": [
       {
         "id": "1",
