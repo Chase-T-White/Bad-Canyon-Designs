@@ -1,10 +1,19 @@
 .navbar {
   background-color: #010101;
   flex-direction: column;
+  position: relative;
 }
 
 .nav-logo {
   max-width: 300px;
+}
+
+.navbar-toggler {
+  background-color: #cecece;
+}
+
+.nav-link-container {
+  max-width: 800px;
 }
 
 .nav-link {
@@ -37,6 +46,14 @@
 
 .nav-link + .nav-link {
   margin-left: 1.2rem;
+}
+
+.nav-icons {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+
+  flex-direction: row;
 }
 
 .cart-container {

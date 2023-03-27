@@ -2,26 +2,26 @@
   {
     "id": "1",
     "description": "Enchanting Serpentine Dance of the Swan",
-    "image": "/assets/Gallery/animal3.jpg"
+    "image": "/assets/Gallery/Animals/animal3.jpg"
   },
   {
     "id": "2",
     "description": "Mystic Midnight Valley",
-    "image": "/assets/Gallery/gallery9.jpg"
+    "image": "/assets/Gallery/Landscapes&Nature/gallery9.jpg"
   },
   {
     "id": "3",
     "description": "White Shadow in Pursuit",
-    "image": "/assets/Gallery/animal26.jpg"
+    "image": "/assets/Gallery/Animals/animal26.jpg"
   },
   {
     "id": "4",
     "description": "Harmony of Duality at Sunrise",
-    "image": "/assets/Gallery/gallery10.jpg"
+    "image": "/assets/Gallery/Landscapes&Nature/gallery10.jpg"
   },
   {
     "id": "5",
     "description": "Snow Ghost in Scarlet",
-    "image": "/assets/Gallery/animal23.jpg"
+    "image": "/assets/Gallery/Animals/animal23.jpg"
   }
 ]

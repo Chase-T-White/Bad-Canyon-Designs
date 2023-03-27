@@ -9,6 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { authActions } from "../../store/authSlice";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
+import { FiLogIn, FiLogOut } from "react-icons/fi";
 import "./navbar.css";
 
 const NavigationBar = () => {
@@ -26,7 +27,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <Navbar expand="md" className="navbar">
+    <Navbar expand="sm" className="navbar">
       <Row>
         <Navbar.Brand className="d-flex align-items-center">
           <Link to={"/"}>
@@ -38,11 +39,11 @@ const NavigationBar = () => {
           </Link>
         </Navbar.Brand>
       </Row>
-      <Row>
+      <Row className="w-100">
         <Container fluid="xl">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="w-100 justify-content-evenly mx-auto nav-link-container">
               <Link to={"shop"} className="nav-link">
                 Shop
               </Link>
@@ -56,20 +57,22 @@ const NavigationBar = () => {
                 Studio
               </Link>
             </Nav>
-            <Nav className="justify-content-end align-items-end">
-              <div className="cart-container">
-                <Link to={"cart"}>
-                  <HiOutlineShoppingCart className="cart-button" />
-                </Link>
-                <div className="cart-amount">{amount}</div>
-              </div>
-              <Button className="link text-white" onClick={handleUserLog}>
-                {isLoggedIn ? "Logout" : "Login"}
-              </Button>
-            </Nav>
           </Navbar.Collapse>
         </Container>
       </Row>
+      <Nav className="nav-icons">
+        <div className="cart-container">
+          <Link to={"cart"}>
+            <HiOutlineShoppingCart className="cart-button" />
+          </Link>
+          <div className="cart-amount">{amount}</div>
+        </div>
+        {isLoggedIn ? (
+          <FiLogOut className="cart-button" onClick={handleUserLog} />
+        ) : (
+          <FiLogIn className="cart-button" onClick={handleUserLog} />
+        )}
+      </Nav>
     </Navbar>
   );
 };
