@@ -11,6 +11,11 @@ body {
   color: #fff;
 }
 
+section {
+  max-width: 1400px;
+  margin: auto;
+}
+
 section,
 header {
   margin-bottom: 8rem;
@@ -26,6 +31,19 @@ h2 {
 
 .section-header {
   text-shadow: 0 0 1rem #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.section-header::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: #66241a;
+  border-radius: 50vw;
+  margin-right: 1rem;
 }
 
 /* Studio */

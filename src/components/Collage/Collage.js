@@ -12,7 +12,7 @@ const Collage = () => {
       <h2 className="section-header">Galleries</h2>
       <Container fluid="lg">
         <Row className="gallery-row">
-          <Col className="gallery-img-container" xs={11}>
+          <Col className="gallery-img-container" xs={10}>
             <Image
               src="../../assets/Collages/recentWorks1.jpg"
               className="galleries-img gal-img__1"
@@ -21,15 +21,15 @@ const Collage = () => {
               <p>Landscapes</p>
             </div>
           </Col>
-          <Col className="icon-container">
+          <Col className="icon-container" xs={2}>
             <GoChevronRight className="icon gallery-icon" />
           </Col>
         </Row>
         <Row className="gallery-row">
-          <Col className="icon-container">
+          <Col className="icon-container" xs={2}>
             <GoChevronLeft className="icon gallery-icon" />
           </Col>
-          <Col className="gallery-img-container" xs={11}>
+          <Col className="gallery-img-container" xs={10}>
             <Image
               fluid
               src="../../assets/Collages/recentWorks3.jpg"
@@ -41,7 +41,7 @@ const Collage = () => {
           </Col>
         </Row>
         <Row className="gallery-row">
-          <Col className="gallery-img-container" xs={11}>
+          <Col className="gallery-img-container" xs={10}>
             <Image
               fluid
               src="../../assets/Collages/recentWorks7.jpg"
@@ -51,15 +51,15 @@ const Collage = () => {
               <p>People</p>
             </div>
           </Col>
-          <Col className="icon-container">
+          <Col className="icon-container" xs={2}>
             <GoChevronRight className="icon gallery-icon" />
           </Col>
         </Row>
         <Row className="gallery-row">
-          <Col className="icon-container">
+          <Col className="icon-container" xs={2}>
             <GoChevronLeft className="icon gallery-icon" />
           </Col>
-          <Col className="gallery-img-container" xs={11}>
+          <Col className="gallery-img-container" xs={10}>
             <Image
               fluid
               src="../../assets/Collages/recentWorks8.jpg"
@@ -71,7 +71,7 @@ const Collage = () => {
           </Col>
         </Row>
         <Row className="gallery-row">
-          <Col className="gallery-img-container" xs={11}>
+          <Col className="gallery-img-container" xs={10}>
             <Image
               fluid
               src="../../assets/Collages/recentWorks9.jpg"
@@ -81,7 +81,7 @@ const Collage = () => {
               <p>Crafts</p>
             </div>
           </Col>
-          <Col className="icon-container">
+          <Col className="icon-container" xs={2}>
             <GoChevronRight className="icon gallery-icon" />
           </Col>
         </Row>

@@ -3,7 +3,13 @@ import React from "react";
 // import Row from "react-bootstrap/Row";
 // import Col from "react-bootstrap/Col";
 // import Image from "react-bootstrap/Image";
-import { HeroCarousel, Transition, Collage, Events } from "../../components";
+import {
+  HeroCarousel,
+  Transition,
+  Collage,
+  Events,
+  HeroShop,
+} from "../../components";
 import "./home.css";
 import { useSelector, useDispatch } from "react-redux";
 // import { authActions } from "../../store/authSlice";
@@ -20,7 +26,6 @@ const Home = () => {
       <section className="hero">
         <HeroCarousel />
       </section>
-      <Transition quote={"Health - Happiness - Adventure"} />
       <Events />
       <section className="home-transition transition-1"></section>
       <Collage />
@@ -30,6 +35,7 @@ const Home = () => {
         }
       />
       <section className="home-transition transition-2"></section>
+      <HeroShop />
     </main>
   );
 };
