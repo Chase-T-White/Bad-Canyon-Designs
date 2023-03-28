@@ -4,19 +4,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import "./shop.css";
 
 const Shop = () => {
   return (
     <main>
-      <header>
-        <div className="header-img">
-          <Image
-            fluid
-            src="assets/headerImg.jpg"
-            className="h-100"
-            style={{ objectFit: "cover" }}
-          ></Image>
-        </div>
+      <header className="shop-header">
+        <h2 className="text-center">Products</h2>
       </header>
       <Container fluid="xxl">
         <Row>

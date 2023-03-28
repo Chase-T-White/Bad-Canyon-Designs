@@ -6,7 +6,7 @@ import Product from "../Product/Product";
 const GridView = ({ products }) => {
   return (
     <section className="shop-products">
-      <Row xs={1} md={2} className="g-4">
+      <Row xs={1} sm={2} md={3} xl={4} className="g-4">
         {products.map((product) => {
           return (
             <Col key={product.id}>

@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { sortActions } from "../../store/sortSlice";
 import categories from "../../data/productFields.json";
+import "./filter.css";
 
 const Filter = () => {
   const { filter, subCategories } = useSelector((state) => state.sort);
@@ -20,18 +21,20 @@ const Filter = () => {
       <h3>Filters</h3>
       <hr />
       <h4>
-        <button value="none" onClick={setFilter}>
+        <button className="filters-button" value="none" onClick={setFilter}>
           All Categories
         </button>
       </h4>
-      {filter !== "none" && <h4>{filter}</h4>}
-      <div className="categories">
+      <div className="filter-category mb-2">
+        {filter !== "none" && <h4>{filter}</h4>}
+      </div>
+      <div className="categories ps-3">
         {filter === "none"
           ? categories.map((category) => {
               return (
                 <button
                   key={category.id}
-                  className="d-block ps-3"
+                  className="d-block w-50 text-start filters-button"
                   value={category.category}
                   onClick={setFilter}
                 >
@@ -43,7 +46,7 @@ const Filter = () => {
               return (
                 <button
                   key={i}
-                  className="d-block ps-3"
+                  className="d-block w-50 text-start filters-button"
                   value={subCategory}
                   onClick={setSubFilter}
                 >

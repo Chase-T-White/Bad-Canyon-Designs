@@ -26,9 +26,9 @@ const Home = () => {
       <section className="hero">
         <HeroCarousel />
       </section>
-      <Events />
-      <section className="home-transition transition-1"></section>
       <Collage />
+      <section className="home-transition transition-1"></section>
+      <Events />
       <Transition
         quote={
           "Creating art is like unlocking a door to enter into a world of my own making - where I can explore my imagination, express my emotions, and bring my ideas to life!"

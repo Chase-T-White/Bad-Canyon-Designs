@@ -1,0 +1,48 @@
+/* Grid Card */
+
+.product-card {
+  overflow: hidden;
+}
+
+.product-card__img-container {
+  overflow: hidden;
+}
+
+.product-card__img {
+  transition: 0.4s ease-out;
+}
+
+.product-card:hover .product-card__img {
+  scale: 1.4;
+}
+
+.product-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* List Card */
+
+.list-product-card {
+  display: flex;
+  max-height: 15rem;
+  padding-left: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.list-product__img-container {
+}
+
+.list-product__img {
+  height: 100%;
+}
+
+.text-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-block: 1rem;
+}

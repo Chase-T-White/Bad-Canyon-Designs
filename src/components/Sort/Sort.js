@@ -7,12 +7,10 @@ import Form from "react-bootstrap/Form";
 import { useDispatch, useSelector } from "react-redux";
 import { viewActions } from "../../store/viewSlice";
 import { sortActions } from "../../store/sortSlice";
-import products from "../../data/products.json";
 
 const Sort = () => {
   const dispatch = useDispatch();
   const filteredProducts = useSelector((state) => state.sort.filtered_products);
-  const isGridView = useSelector((state) => state.view.gridView);
   const toGridView = () => {
     dispatch(viewActions.gridView());
   };
@@ -28,14 +26,19 @@ const Sort = () => {
   return (
     <Row className="align-items-end mb-3">
       <Col className="d-flex">
-        <Button className="me-1">
-          <BsFillGridFill onClick={toGridView} />
-        </Button>
-        <Button className="me-2">
-          <BsList onClick={toListView} />
-        </Button>
-        <p className="text-white">{filteredProducts.length} items available</p>
-        <hr />
+        <div className="d-flex me-3">
+          <Button className="me-1">
+            <BsFillGridFill onClick={toGridView} />
+          </Button>
+          <Button>
+            <BsList onClick={toListView} />
+          </Button>
+        </div>
+        <div className="d-inline-flex align-items-center w-100">
+          <p className="text-white mb-0">
+            {filteredProducts.length} items available
+          </p>
+        </div>
       </Col>
       <Col>
         <Form>
