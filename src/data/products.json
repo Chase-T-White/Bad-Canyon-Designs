@@ -17,7 +17,8 @@
     "price": 4510,
     "imageMain": "/assets/productImages/Clothing/Leggings/greyLeggingsMain.jpg",
     "colors": {},
-    "description": "A cool graphic of a weightlifter with a frame pack loaded up with a set of elk antlers, standing in front of a pine forest."
+    "description": "A cool graphic of a weightlifter with a frame pack loaded up with a set of elk antlers, standing in front of a pine forest.",
+    "featured": true
   },
   {
     "id": "03",
@@ -44,7 +45,8 @@
       "Navy": "#21233c",
       "Denim Heather": "#484854"
     },
-    "description": "Crossed antlers logo"
+    "description": "Crossed antlers logo",
+    "featured": true
   },
   {
     "id": "05",
@@ -407,7 +409,8 @@
     "price": 2076,
     "imageMain": "/assets/productImages/Accessories/WaterBottles/bluePurpleStillBreathingWaterBottle.jpg",
     "colors": {},
-    "description": "Blue/Purple gradient Still Breathing logo on a stainless steel water bottle."
+    "description": "Blue/Purple gradient Still Breathing logo on a stainless steel water bottle.",
+    "featured": true
   },
   {
     "id": "39",

@@ -11,6 +11,7 @@ const sortSlice = createSlice({
     filter: "none",
     subCategories: [],
     subFiltered_products: [],
+    featured_products: [],
   },
   reducers: {
     sortProducts(state, action) {
@@ -72,6 +73,11 @@ const sortSlice = createSlice({
           return product.subcategory === action.payload;
         });
       }
+    },
+    pullFeaturedProducts(state) {
+      state.featured_products = state.all_products.filter((product) => {
+        return product.featured === true;
+      });
     },
   },
 });

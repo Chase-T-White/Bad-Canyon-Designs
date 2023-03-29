@@ -1,4 +1,5 @@
 import React from "react";
+import "./gallery.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -11,7 +12,7 @@ const Gallery = () => {
   const categories = Object.keys(...gallery);
 
   return (
-    <main>
+    <main className="gallery">
       <Container>
         {categories.map((category, i) => {
           let galleryArray = gallery[0][category];
@@ -21,13 +22,19 @@ const Gallery = () => {
           }
           return (
             <article key={i}>
-              <h3>{category}</h3>
+              <Link to={`${category}`}>
+                <h3>{category}</h3>
+              </Link>
               <Row xs={1} sm={2} md={3}>
                 {galleryArray.map((piece) => {
                   return (
                     <Col className="px-0">
                       <Link to={`${category}/${piece.id}`}>
-                        <Image fluid src={piece.image}></Image>
+                        <Image
+                          fluid
+                          src={piece.image}
+                          className="gallery-img"
+                        ></Image>
                       </Link>
                     </Col>
                   );
