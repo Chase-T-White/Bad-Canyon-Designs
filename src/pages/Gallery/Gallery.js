@@ -22,10 +22,10 @@ const Gallery = () => {
           return (
             <article key={i}>
               <h3>{category}</h3>
-              <Row>
+              <Row xs={1} sm={2} md={3}>
                 {galleryArray.map((piece) => {
                   return (
-                    <Col>
+                    <Col className="px-0">
                       <Link to={`${category}/${piece.id}`}>
                         <Image fluid src={piece.image}></Image>
                       </Link>
