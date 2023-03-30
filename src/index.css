@@ -9,6 +9,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #0a0201;
   color: #fff;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 section {

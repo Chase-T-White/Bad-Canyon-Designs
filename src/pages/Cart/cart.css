@@ -1,0 +1,18 @@
+.item-row {
+  height: 5rem;
+}
+
+.cart-img {
+  max-width: 10rem;
+}
+
+.cart-trash-icon {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+}
+
+.cart-trash-icon:hover {
+  cursor: pointer;
+  color: #ffffffc9;
+}

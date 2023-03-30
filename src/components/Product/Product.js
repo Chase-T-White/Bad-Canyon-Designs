@@ -48,19 +48,21 @@ const Product = ({ id, name, price, imageMain, description }) => {
   } else {
     return (
       <article className="list-product-card">
-        <Col md={4} className="me-4">
+        <Col md={4} xl={3} className="me-4">
           <Link to={`${id}`}>
             <Image fluid src={imageMain} className="list-product__img"></Image>
           </Link>
         </Col>
-        <Col>
+        <Col sm={6}>
           <div className="text-body">
             <Link to={`${id}`}>
               <h5>{name}</h5>
             </Link>
             <p className="text-dark">{formatPrice(price)}</p>
             <p className="text-dark">{description}</p>
-            <Button onClick={addToCart}>Add to Cart</Button>
+            <Button className="list-button" onClick={addToCart}>
+              Add to Cart
+            </Button>
           </div>
         </Col>
       </article>

@@ -8,10 +8,11 @@ import {
   AiFillTwitterSquare,
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-4">
+    <footer className="py-4 footer">
       <Container>
         <Row className="align-items-center">
           <Col>Bad Canyon Designs &copy; {new Date().getFullYear()}</Col>
