@@ -7,6 +7,7 @@ import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import { useParams } from "react-router-dom";
 import { galleryActions } from "../../store/gallerySlice";
+import { cartActions } from "../../store/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { formatPrice } from "../../utils/helpers";
 
@@ -18,6 +19,18 @@ const PiecePage = () => {
   useEffect(() => {
     dispatch(galleryActions.filterArtPiece(url));
   }, [url]);
+
+  const addToCart = () => {
+    dispatch(
+      cartActions.addToCart({
+        id: pieceData.id,
+        name: pieceData.title,
+        price: pieceData.price,
+        imageMain: pieceData.image,
+        quantity: 1,
+      })
+    );
+  };
 
   if (pieceData === null) {
     return <h1>loading...</h1>;
@@ -39,7 +52,7 @@ const PiecePage = () => {
                 Dimensions: {pieceData.dimensions}
               </span>
               <br />
-              <Button>Add To Cart</Button>
+              <Button onClick={addToCart}>Add To Cart</Button>
             </Col>
             /
           </Row>

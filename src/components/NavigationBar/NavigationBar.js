@@ -65,7 +65,7 @@ const NavigationBar = () => {
           <Link to={"cart"}>
             <HiOutlineShoppingCart className="cart-button" />
           </Link>
-          <div className="cart-amount">{amount}</div>
+          {amount !== 0 && <div className="cart-amount">{amount}</div>}
         </div>
         {isLoggedIn ? (
           <FiLogOut className="cart-button" onClick={handleUserLog} />

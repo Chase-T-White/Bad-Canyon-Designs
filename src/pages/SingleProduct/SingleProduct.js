@@ -9,12 +9,28 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import "./singleProduct.css";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../store/cartSlice";
 
 const SingleProduct = () => {
   const { id } = useParams();
   const fetchProduct = products.find((product) => product.id === id);
   const { name, price, imageMain, description, colors, category, subcategory } =
     fetchProduct;
+
+  const dispatch = useDispatch();
+  const addToCart = () => {
+    dispatch(
+      cartActions.addToCart({
+        id,
+        name,
+        price,
+        imageMain,
+        quantity: 1,
+      })
+    );
+  };
+
   return (
     <main className="singleProduct">
       <Container fluid="lg" className="product-container">
@@ -35,7 +51,7 @@ const SingleProduct = () => {
               <p>Designs by Nickolas White</p>
               <p className="price">{formatPrice(price)}</p>
               <p>{description}</p>
-              <Button>Add To Cart</Button>
+              <Button onClick={addToCart}>Add To Cart</Button>
             </aside>
           </Col>
         </Row>

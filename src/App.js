@@ -43,7 +43,7 @@ function App() {
                 <Checkout />
               ) : (
                 /* </PrivateRoute> */
-                <Navigate to={"login"} />
+                <Navigate to={"../login"} />
               )
             }
           />

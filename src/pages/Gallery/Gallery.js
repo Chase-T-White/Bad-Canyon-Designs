@@ -13,6 +13,9 @@ const Gallery = () => {
 
   return (
     <main className="gallery">
+      <header className="gallery-header">
+        <h2 className="text-center">Galleries</h2>
+      </header>
       <Container>
         {categories.map((category, i) => {
           let galleryArray = gallery[0][category];
@@ -21,10 +24,10 @@ const Gallery = () => {
             galleryArray = galleryArray.slice(0, gallerySize);
           }
           return (
-            <article key={i}>
-              <Link to={`${category}`}>
-                <h3>{category}</h3>
-              </Link>
+            <article key={i} className="subgallery">
+              <h2 className="subgallery__heading">
+                <Link to={`${category}`}>{category}</Link>
+              </h2>
               <Row xs={1} sm={2} md={3}>
                 {galleryArray.map((piece) => {
                   return (
