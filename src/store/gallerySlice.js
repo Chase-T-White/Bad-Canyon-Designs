@@ -9,6 +9,10 @@ const gallerySlice = createSlice({
     artPiece: null,
   },
   reducers: {
+    setSubGallery(state, action) {
+      const { category } = action.payload;
+      state.subGallery = state.fullGallery[0][category];
+    },
     filterArtPiece(state, action) {
       const { category, id } = action.payload;
       state.artPiece = state.fullGallery[0][category].find((artPiece) => {
