@@ -1,0 +1,64 @@
+.subGallery-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-block: 8rem;
+}
+
+.artPiece-container {
+  position: relative;
+  isolation: isolate;
+}
+
+.landscapes_nature {
+  background-image: linear-gradient(to right, #0a0201, #0a020198 40%),
+    url(/public/assets/Adventure/adventuresWaterfall.jpg);
+}
+
+.animals {
+  background-image: linear-gradient(to right, #0a0201, #0a020198 40%),
+    url(/public/assets/Adventure/adventuresBuffalo.jpg);
+}
+
+.people {
+  background-image: linear-gradient(to right, #0a0201, #0a020198 40%),
+    url(/public/assets/Adventure/adventuresPeople.jpg);
+}
+
+.abstract {
+  background-image: linear-gradient(to right, #0a0201, #0a020198 40%),
+    url(/public/assets/Adventure/adventuresAbstract.jpg);
+}
+
+.crafts {
+  background-image: linear-gradient(to right, #0a0201, #0a020198 40%),
+    url(/public/assets/Adventure/adventuresCrafts.jpg);
+}
+
+.artPiece-container:hover .artPiece__hoverBox {
+  z-index: 10;
+}
+
+.artPiece__hoverBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0%;
+  z-index: -1;
+  background-color: #00000070;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.artPiece__hoverBox-icon {
+  font-size: 2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.artPiece__hoverBox-icon:hover {
+  color: #66241a;
+  cursor: pointer;
+}

@@ -9,6 +9,7 @@ import {
   Shop,
   SingleProduct,
   Cart,
+  Contact,
   Checkout,
   Login,
   Error,
@@ -30,6 +31,7 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="gallery/:category" element={<SubGallery />} />
           <Route path="gallery/:category/:id" element={<PiecePage />} />
+          <Route path="Contact" element={<Contact />} />
           <Route path="story" element={<Story />} />
           <Route path="studio" element={<Studio />} />
           <Route path="shop" element={<Shop />} />

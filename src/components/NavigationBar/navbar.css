@@ -2,6 +2,7 @@
   background-color: #010101;
   flex-direction: column;
   position: relative;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .nav-logo {
@@ -9,7 +10,13 @@
 }
 
 .navbar-toggler {
-  background-color: #cecece;
+  background-color: transparent;
+  border-color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  background-color: #222;
 }
 
 .nav-link-container {
@@ -24,6 +31,10 @@
 
 .nav-link:hover {
   color: #ffffff8a;
+}
+
+.nav-link.active {
+  color: #66241a !important;
 }
 
 .nav-link:after {
@@ -48,10 +59,16 @@
   margin-left: 1.2rem;
 }
 
+@media screen and (max-width: 575px) {
+  .nav-link:first-child {
+    margin-left: 1.2rem;
+  }
+}
+
 .nav-icons {
   position: absolute;
-  top: 10%;
-  right: 5%;
+  top: 2rem;
+  right: 2rem;
 
   flex-direction: row;
 }
@@ -66,6 +83,7 @@
 
 .cart-button {
   font-size: 2rem;
+  color: #66241a;
 }
 
 .cart-amount {

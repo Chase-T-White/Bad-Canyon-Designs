@@ -16,6 +16,10 @@
   isolation: isolate;
 }
 
+.gallery-img-container a {
+  color: #fff;
+}
+
 .galleries-img {
   width: 120%;
   position: absolute;

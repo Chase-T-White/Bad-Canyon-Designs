@@ -27,7 +27,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <Navbar expand="sm" className="navbar">
+    <Navbar collapseOnSelect expand="sm">
       <Row>
         <Navbar.Brand className="d-flex align-items-center">
           <Link to={"/"}>
@@ -41,21 +41,34 @@ const NavigationBar = () => {
       </Row>
       <Row className="w-100">
         <Container fluid="xl">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="w-100 justify-content-evenly mx-auto nav-link-container">
-              <Link to={"shop"} className="nav-link">
-                Shop
-              </Link>
-              <Link to={"gallery"} className="nav-link">
+              <Nav.Link
+                eventKey="1"
+                as={Link}
+                to="gallery"
+                className="nav-link"
+              >
                 Gallery
-              </Link>
-              <Link to={"story"} className="nav-link">
+              </Nav.Link>
+              <Nav.Link eventKey="2" as={Link} to="shop" className="nav-link">
+                Shop
+              </Nav.Link>
+              <Nav.Link eventKey="3" as={Link} to="story" className="nav-link">
                 Story
-              </Link>
-              <Link to={"studio"} className="nav-link">
+              </Nav.Link>
+              <Nav.Link eventKey="4" as={Link} to="studio" className="nav-link">
                 Studio
-              </Link>
+              </Nav.Link>
+              <Nav.Link
+                eventKey="5"
+                as={Link}
+                to="Contact"
+                className="nav-link"
+              >
+                Contact
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

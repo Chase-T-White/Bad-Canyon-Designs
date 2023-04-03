@@ -1,6 +1,6 @@
 .hero {
   max-width: none;
-  height: calc(100vh - 55px);
+  height: calc(100vh - 270px);
   background-image: url(../../../public/assets/herobg.jpg);
   background-position: center;
   background-repeat: no-repeat;

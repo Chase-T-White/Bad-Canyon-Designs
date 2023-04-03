@@ -12,7 +12,7 @@ const HeroCarousel = () => {
           <Carousel.Item key={i} className="carousel-item">
             <Image fluid src={piece.image} className="carousel-img"></Image>
             <Carousel.Caption>
-              <h2 className="mb-4">{piece.description}</h2>
+              <h2>{piece.description}</h2>
             </Carousel.Caption>
           </Carousel.Item>
         );
