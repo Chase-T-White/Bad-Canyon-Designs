@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 import { galleryActions } from "../../store/gallerySlice";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
@@ -11,6 +13,9 @@ import { BsArrowRight } from "react-icons/bs";
 import "./subGallery.css";
 
 const SubGallery = () => {
+  const [show, setShow] = useState(false);
+  const [modalArt, setModalArt] = useState([]);
+
   const url = useParams();
   const dispatch = useDispatch();
   const subGalleryArray = useSelector((state) => state.gallery.subGallery);
@@ -18,6 +23,15 @@ const SubGallery = () => {
   useEffect(() => {
     dispatch(galleryActions.setSubGallery(url));
   }, [url]);
+
+  const handleClose = () => setShow(false);
+  const handleShow = (pieceID) => {
+    const pullModalArt = subGalleryArray.find((piece) => {
+      return piece.id === pieceID;
+    });
+    setModalArt(pullModalArt);
+    setShow(true);
+  };
 
   if (subGalleryArray === null) {
     return <h1>Loading...</h1>;
@@ -28,6 +42,19 @@ const SubGallery = () => {
           <h2 className="text-center">{url.category}</h2>
         </header>
         <article className={`${url.category} subGallery-bg`}>
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title className="text-dark">{modalArt.title}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Image fluid src={modalArt.image} className="gallery-img"></Image>
+            </Modal.Body>
+            <Modal.Footer>
+              <Link to={`${modalArt.id}`}>
+                <Button variant="primary">Details</Button>
+              </Link>
+            </Modal.Footer>
+          </Modal>
           <Container>
             <Row xs={1} sm={2} md={3}>
               {subGalleryArray.map((piece, i) => {
@@ -42,6 +69,7 @@ const SubGallery = () => {
                       <BiExpandAlt
                         className="artPiece__hoverBox-icon"
                         title="Expand"
+                        onClick={() => handleShow(piece.id)}
                       />
                       <Link to={`${piece.id}`} title="Details">
                         <BsArrowRight className="artPiece__hoverBox-icon" />
