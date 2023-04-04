@@ -6,13 +6,18 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+import { useInView } from "react-intersection-observer";
 
 const Collage = () => {
+  const { ref, inView, entry } = useInView({
+    rootMargin: "100px",
+  });
+
   return (
     <section>
       <h2 className="section-header">Galleries</h2>
       <Container fluid="lg">
-        <Row className="gallery-row">
+        <Row ref={ref} className={`gallery-row ${inView ? "slideIn" : ""}`}>
           <Col className="gallery-img-container" xs={10}>
             <Link to={"gallery/landscapes_nature"}>
               <Image
@@ -28,7 +33,7 @@ const Collage = () => {
             <GoChevronRight className="icon gallery-icon" />
           </Col>
         </Row>
-        <Row className="gallery-row">
+        <Row className={`gallery-row ${inView ? "slideIn" : ""}`}>
           <Col className="icon-container" xs={2}>
             <GoChevronLeft className="icon gallery-icon" />
           </Col>
@@ -45,7 +50,7 @@ const Collage = () => {
             </Link>
           </Col>
         </Row>
-        <Row className="gallery-row">
+        <Row className={`gallery-row ${inView ? "slideIn" : ""}`}>
           <Col className="gallery-img-container" xs={10}>
             <Link to={"gallery/people"}>
               <Image
@@ -62,7 +67,7 @@ const Collage = () => {
             <GoChevronRight className="icon gallery-icon" />
           </Col>
         </Row>
-        <Row className="gallery-row">
+        <Row className={`gallery-row ${inView ? "slideIn" : ""}`}>
           <Col className="icon-container" xs={2}>
             <GoChevronLeft className="icon gallery-icon" />
           </Col>
@@ -79,7 +84,7 @@ const Collage = () => {
             </Link>
           </Col>
         </Row>
-        <Row className="gallery-row">
+        <Row className={`gallery-row ${inView ? "slideIn" : ""}`}>
           <Col className="gallery-img-container" xs={10}>
             <Link to={"gallery/crafts"}>
               <Image

@@ -14,6 +14,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Gallery = () => {
   const [show, setShow] = useState(false);
   const [modalArt, setModalArt] = useState([]);
+
   const gallery = useSelector((state) => state.gallery.fullGallery);
   const categories = Object.keys(...gallery);
 
