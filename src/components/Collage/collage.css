@@ -7,14 +7,14 @@
 .gallery-row:nth-child(odd) {
   opacity: 0;
   transform: translateX(-100%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .gallery-row:nth-child(even) {
   justify-content: end;
   opacity: 0;
   transform: translateX(100%);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .slideIn {
@@ -65,7 +65,7 @@
 .icon-container {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   transition: transform 0.5s ease-in-out;
   z-index: -1;
 }

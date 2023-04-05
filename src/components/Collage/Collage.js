@@ -9,15 +9,30 @@ import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { useInView } from "react-intersection-observer";
 
 const Collage = () => {
-  const { ref, inView, entry } = useInView({
-    rootMargin: "100px",
+  const { ref: landRow, inView: landRowVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: animalRow, inView: animalRowVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: peopleRow, inView: peopleRowVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: abstractRow, inView: abstractRowVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: craftRow, inView: craftRowVisible } = useInView({
+    triggerOnce: true,
   });
 
   return (
     <section>
       <h2 className="section-header">Galleries</h2>
       <Container fluid="lg">
-        <Row ref={ref} className={`gallery-row ${inView ? "slideIn" : ""}`}>
+        <Row
+          ref={landRow}
+          className={`gallery-row ${landRowVisible ? "slideIn" : ""}`}
+        >
           <Col className="gallery-img-container" xs={10}>
             <Link to={"gallery/landscapes_nature"}>
               <Image
@@ -33,7 +48,10 @@ const Collage = () => {
             <GoChevronRight className="icon gallery-icon" />
           </Col>
         </Row>
-        <Row className={`gallery-row ${inView ? "slideIn" : ""}`}>
+        <Row
+          ref={animalRow}
+          className={`gallery-row ${animalRowVisible ? "slideIn" : ""}`}
+        >
           <Col className="icon-container" xs={2}>
             <GoChevronLeft className="icon gallery-icon" />
           </Col>
@@ -50,7 +68,10 @@ const Collage = () => {
             </Link>
           </Col>
         </Row>
-        <Row className={`gallery-row ${inView ? "slideIn" : ""}`}>
+        <Row
+          ref={peopleRow}
+          className={`gallery-row ${peopleRowVisible ? "slideIn" : ""}`}
+        >
           <Col className="gallery-img-container" xs={10}>
             <Link to={"gallery/people"}>
               <Image
@@ -67,7 +88,10 @@ const Collage = () => {
             <GoChevronRight className="icon gallery-icon" />
           </Col>
         </Row>
-        <Row className={`gallery-row ${inView ? "slideIn" : ""}`}>
+        <Row
+          ref={abstractRow}
+          className={`gallery-row ${abstractRowVisible ? "slideIn" : ""}`}
+        >
           <Col className="icon-container" xs={2}>
             <GoChevronLeft className="icon gallery-icon" />
           </Col>
@@ -84,7 +108,10 @@ const Collage = () => {
             </Link>
           </Col>
         </Row>
-        <Row className={`gallery-row ${inView ? "slideIn" : ""}`}>
+        <Row
+          ref={craftRow}
+          className={`gallery-row ${craftRowVisible ? "slideIn" : ""}`}
+        >
           <Col className="gallery-img-container" xs={10}>
             <Link to={"gallery/crafts"}>
               <Image

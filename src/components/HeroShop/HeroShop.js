@@ -2,14 +2,19 @@ import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
+import "./heroShop.css";
 import { useSelector, useDispatch } from "react-redux";
 import { sortActions } from "../../store/sortSlice";
 import { Link } from "react-router-dom";
 import { formatPrice } from "../../utils/helpers";
+import { useInView } from "react-intersection-observer";
 
 const HeroShop = () => {
+  const { ref: featuredRow, inView: featuredRowVisible } = useInView({
+    threshold: 0.6,
+    triggerOnce: true,
+  });
   const featuredProducts = useSelector((state) => state.sort.featured_products);
   const dispatch = useDispatch();
 
@@ -21,27 +26,30 @@ const HeroShop = () => {
 
   return (
     <section className="heroShop">
-      <header>
+      <header className="section-header">
         <h4>Shop</h4>
       </header>
-      <Container>
-        <Row>
+      <Row className="shop__sale-row">
+        <Container className="text-center d-flex align-items-center">
           <Col>
-            <p>
+            <p className="shop__sales-text">
               In celebration of the spirit of the huntsman, I am offering 10%
               off and free shipping on all hats for a limited time!
             </p>
           </Col>
-          <Col>
-            <Image fluid src="/assets/homeShop.jpg"></Image>
-          </Col>
-        </Row>
+        </Container>
+      </Row>
+      <Container>
         <Row>
-          <h3>Featured Products</h3>
-          <Row sm={1} md={3}>
+          <h3 className="text-center mb-3">Featured Products</h3>
+          <Row sm={1} md={3} className="card-row" ref={featuredRow}>
             {featuredProducts.map((product) => {
               return (
-                <Card className="product-card">
+                <Card
+                  className={`product-card featured-card ${
+                    featuredRowVisible ? "slideRight" : ""
+                  }`}
+                >
                   <Link to={`${product.id}`}>
                     <div className="product-card__img-container">
                       <Card.Img

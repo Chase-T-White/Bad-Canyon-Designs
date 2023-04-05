@@ -4,8 +4,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import { useInView } from "react-intersection-observer";
 
 const Events = () => {
+  const { ref: event, inView: eventVisible } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   return (
     <section className="events">
       <header>
@@ -13,7 +18,7 @@ const Events = () => {
       </header>
       <Container>
         <article className="events-card">
-          <Row>
+          <Row ref={event}>
             <Col className="events-img-container">
               <Image
                 fluid
@@ -21,7 +26,7 @@ const Events = () => {
                 className="event-img"
               ></Image>
             </Col>
-            <Col className="events-text p-5">
+            <Col className={`events-text p-5 ${eventVisible ? "slideUp" : ""}`}>
               <header>
                 <h2>Bisop's Art Walk</h2>
                 <p>
