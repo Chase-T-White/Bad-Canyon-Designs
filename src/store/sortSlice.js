@@ -84,4 +84,4 @@ const sortSlice = createSlice({
 
 export const sortActions = sortSlice.actions;
 
-export default sortSlice;
+export default sortSlice.reducer;

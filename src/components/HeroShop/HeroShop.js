@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 import "./heroShop.css";
 import { useSelector, useDispatch } from "react-redux";
 import { sortActions } from "../../store/sortSlice";
@@ -36,6 +37,9 @@ const HeroShop = () => {
               In celebration of the spirit of the huntsman, I am offering 10%
               off and free shipping on all hats for a limited time!
             </p>
+            <Button>
+              <Link to={"shop"}>Shop</Link>
+            </Button>
           </Col>
         </Container>
       </Row>
@@ -50,7 +54,7 @@ const HeroShop = () => {
                     featuredRowVisible ? "slideRight" : ""
                   }`}
                 >
-                  <Link to={`${product.id}`}>
+                  <Link to={`shop/${product.id}`}>
                     <div className="product-card__img-container">
                       <Card.Img
                         variant="top"
@@ -60,7 +64,7 @@ const HeroShop = () => {
                     </div>
                   </Link>
                   <Card.Body className="product-card__body">
-                    <Link to={`${product.id}`}>
+                    <Link to={`shop/${product.id}`}>
                       <Card.Title>{product.name}</Card.Title>
                     </Link>
                     <Card.Text className="text-dark">
