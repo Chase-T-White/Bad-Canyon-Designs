@@ -22,7 +22,7 @@ const SubGallery = () => {
 
   useEffect(() => {
     dispatch(galleryActions.setSubGallery(url));
-  }, [url]);
+  }, [url, dispatch]);
 
   const handleClose = () => setShow(false);
   const handleShow = (pieceID) => {

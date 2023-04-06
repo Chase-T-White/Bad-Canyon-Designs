@@ -21,7 +21,7 @@ const HeroShop = () => {
 
   useEffect(() => {
     dispatch(sortActions.pullFeaturedProducts());
-  }, []);
+  }, [dispatch]);
 
   console.log(featuredProducts);
 

@@ -18,7 +18,7 @@ const PiecePage = () => {
 
   useEffect(() => {
     dispatch(galleryActions.filterArtPiece(url));
-  }, [url]);
+  }, [url, dispatch]);
 
   const addToCart = () => {
     dispatch(

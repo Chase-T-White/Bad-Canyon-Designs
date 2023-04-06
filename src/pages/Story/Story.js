@@ -61,7 +61,7 @@ const Story = () => {
       </section>
       <section>
         <Container>
-          <section>
+          {/* <section>
             <Container>
               <iframe
                 src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbadcanyondesigns%2Fvideos%2F2432064033680840%2F&show_text=false&width=476&t=0"
@@ -74,7 +74,7 @@ const Story = () => {
                 allowFullScreen="true"
               ></iframe>
             </Container>
-          </section>
+          </section> */}
           <section>
             <Container>
               <Row className="align-items-center">
