@@ -16,7 +16,7 @@ import { useInView } from "react-intersection-observer";
 const Gallery = () => {
   const [show, setShow] = useState(false);
   const [modalArt, setModalArt] = useState([]);
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     triggerOnce: true,
   });
 
