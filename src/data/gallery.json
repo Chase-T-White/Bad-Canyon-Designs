@@ -3,7 +3,7 @@
     "landscapes_nature": [
       {
         "id": "1",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land1",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -14,7 +14,7 @@
       },
       {
         "id": "2",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land2",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -25,7 +25,7 @@
       },
       {
         "id": "3",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land3",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -36,7 +36,7 @@
       },
       {
         "id": "4",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land4",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -47,7 +47,7 @@
       },
       {
         "id": "5",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land5",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -58,7 +58,7 @@
       },
       {
         "id": "6",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land6",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -69,7 +69,7 @@
       },
       {
         "id": "7",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land7",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -80,7 +80,7 @@
       },
       {
         "id": "8",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land8",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -91,7 +91,7 @@
       },
       {
         "id": "9",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land9",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -102,7 +102,7 @@
       },
       {
         "id": "10",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land10",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -113,7 +113,7 @@
       },
       {
         "id": "11",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land11",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -124,7 +124,7 @@
       },
       {
         "id": "12",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land12",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -135,7 +135,7 @@
       },
       {
         "id": "13",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land13",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -146,7 +146,7 @@
       },
       {
         "id": "14",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land14",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -157,7 +157,7 @@
       },
       {
         "id": "15",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land15",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -168,7 +168,7 @@
       },
       {
         "id": "16",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land16",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -179,7 +179,7 @@
       },
       {
         "id": "17",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land17",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -190,7 +190,7 @@
       },
       {
         "id": "18",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land18",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -201,7 +201,7 @@
       },
       {
         "id": "19",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land19",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -212,7 +212,7 @@
       },
       {
         "id": "20",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land20",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -223,7 +223,7 @@
       },
       {
         "id": "21",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land21",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -234,7 +234,7 @@
       },
       {
         "id": "22",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land22",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -245,7 +245,7 @@
       },
       {
         "id": "23",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land23",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -256,7 +256,7 @@
       },
       {
         "id": "24",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land24",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -267,7 +267,7 @@
       },
       {
         "id": "25",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land25",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -278,7 +278,7 @@
       },
       {
         "id": "26",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land26",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -289,7 +289,7 @@
       },
       {
         "id": "27",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land27",
         "price": 8500,
         "dimensions": "12' x 14'",
@@ -300,7 +300,7 @@
       },
       {
         "id": "28",
-        "category": "landscape",
+        "category": "landscapes_nature",
         "title": "land28",
         "price": 8500,
         "dimensions": "12' x 14'",

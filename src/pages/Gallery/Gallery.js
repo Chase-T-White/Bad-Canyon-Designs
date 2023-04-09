@@ -38,7 +38,12 @@ const Gallery = () => {
         <h2 className="text-center">Galleries</h2>
       </header>
       <Container>
-        <Modal show={show} onHide={handleClose} centered>
+        <Modal
+          show={show}
+          onHide={handleClose}
+          centered
+          dialogClassName="modal"
+        >
           <Modal.Header closeButton>
             <Modal.Title className="text-dark">{modalArt.title}</Modal.Title>
           </Modal.Header>
@@ -46,7 +51,7 @@ const Gallery = () => {
             <Image fluid src={modalArt.image} className="gallery-img"></Image>
           </Modal.Body>
           <Modal.Footer>
-            <Link to={`${modalArt.id}`}>
+            <Link to={`${modalArt.category}/${modalArt.id}`}>
               <Button variant="primary">Details</Button>
             </Link>
           </Modal.Footer>

@@ -26,18 +26,23 @@ const Cart = () => {
 
   if (cartItems.length === 0) {
     return (
-      <Container>
-        <h3>
+      <Container className="empty-cart">
+        <header className="gallery-header">
+          <h2 className="text-center">Cart</h2>
+        </header>
+        <h3 className="text-center mb-4">
           There are no items in your cart.
           <br />
           Go, spend money. Then get excited to spend more money.
         </h3>
-        <Link to={"../shop"}>
-          <Button>Spend Money</Button>
-        </Link>
-        <Link to={"../gallery"}>
-          <Button>Buy Art</Button>
-        </Link>
+        <div className="d-flex justify-content-center">
+          <Link to={"../shop"}>
+            <Button className="px-4 me-2">Spend Money</Button>
+          </Link>
+          <Link to={"../gallery"}>
+            <Button className="px-4">Buy Art</Button>
+          </Link>
+        </div>
       </Container>
     );
   }
@@ -45,7 +50,10 @@ const Cart = () => {
   return (
     <main className="cart">
       <Container fluid="lg">
-        <h2 className="text-center table-hover">
+        <header className="gallery-header">
+          <h2 className="text-center">Cart</h2>
+        </header>
+        <h2 className="mb-4 text-center table-hover">
           Your Cart: {cartItems.length} Items
         </h2>
         <Table
@@ -86,33 +94,41 @@ const Cart = () => {
             })}
           </tbody>
         </Table>
-        <Table
-          className="text-white table-hover"
-          striped
-          bordered
-          size="sm"
-          variant="dark"
-        >
-          <tbody>
-            <tr>
-              <td>Subtotal:</td>
-              <td>{formatPrice(total)}</td>
-            </tr>
-            <tr>
-              <td>Sales Tax:</td>
-              <td>{formatPrice(total * 0.1)}</td>
-            </tr>
-            <tr>
-              <td>Grand Total:</td>
-              <td>{formatPrice(total + total * 0.1)}</td>
-            </tr>
-          </tbody>
-        </Table>
-        <Row>
-          <Button onClick={clearCart}>Clear Cart</Button>
-          <Link to={"../checkout"}>
-            <Button>Checkout</Button>
-          </Link>
+        <Row className="justify-content-end mx-0">
+          <Table
+            className="cart__total-table text-white"
+            striped
+            bordered
+            size="sm"
+            variant="dark"
+          >
+            <tbody>
+              <tr>
+                <td>Subtotal:</td>
+                <td className="text-center">{formatPrice(total)}</td>
+              </tr>
+              <tr>
+                <td>Sales Tax:</td>
+                <td className="text-center">{formatPrice(total * 0.1)}</td>
+              </tr>
+              <tr>
+                <td>Grand Total:</td>
+                <td className="text-center">
+                  {formatPrice(total + total * 0.1)}
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+        </Row>
+        <Row className="mx-0 justify-content-end">
+          <div className="cart__button-container">
+            <Button onClick={clearCart} variant="outline-primary">
+              Clear Cart
+            </Button>
+            <Link to={"../checkout"}>
+              <Button>Checkout</Button>
+            </Link>
+          </div>
         </Row>
       </Container>
     </main>

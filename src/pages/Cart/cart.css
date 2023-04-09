@@ -1,3 +1,11 @@
+.cart {
+  margin-bottom: 8rem;
+}
+
+.empty-cart {
+  height: 100%;
+}
+
 .item-row {
   height: 5rem;
 }
@@ -15,4 +23,23 @@
 .cart-trash-icon:hover {
   cursor: pointer;
   color: #ffffffc9;
+}
+
+.cart__total-table,
+.cart__button-container {
+  max-width: 25rem;
+}
+
+.cart__button-container {
+  display: flex;
+  padding: 0;
+  gap: 1rem;
+}
+
+.cart__button-container > * {
+  flex-grow: 1;
+}
+
+.cart__button-container a button {
+  width: 100%;
 }

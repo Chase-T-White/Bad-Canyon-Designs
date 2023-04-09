@@ -37,8 +37,10 @@ const HeroShop = () => {
               In celebration of the spirit of the huntsman, I am offering 10%
               off and free shipping on all hats for a limited time!
             </p>
-            <Button>
-              <Link to={"shop"}>Shop</Link>
+            <Button size="lg" className="px-5">
+              <Link to={"shop"} className="text-white shop__sales-button-link">
+                Shop Now
+              </Link>
             </Button>
           </Col>
         </Container>
@@ -46,7 +48,7 @@ const HeroShop = () => {
       <Container>
         <Row>
           <h3 className="text-center mb-3">Featured Products</h3>
-          <Row sm={1} md={3} className="card-row" ref={featuredRow}>
+          <Row xs={1} sm={2} md={3} className="card-row" ref={featuredRow}>
             {featuredProducts.map((product) => {
               return (
                 <Card
