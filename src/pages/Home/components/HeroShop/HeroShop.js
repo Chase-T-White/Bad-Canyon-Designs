@@ -6,9 +6,9 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./heroShop.css";
 import { useSelector, useDispatch } from "react-redux";
-import { sortActions } from "../../store/sortSlice";
+import { sortActions } from "../../../../store/sortSlice";
 import { Link } from "react-router-dom";
-import { formatPrice } from "../../utils/helpers";
+import { formatPrice } from "../../../../utils/helpers";
 import { useInView } from "react-intersection-observer";
 
 const HeroShop = () => {

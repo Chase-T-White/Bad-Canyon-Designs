@@ -5,7 +5,8 @@ import {
   Collage,
   Events,
   HeroShop,
-} from "../../components";
+  Newsletter,
+} from "./components";
 import "./home.css";
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
       />
       <section className="home-transition transition-2"></section>
       <HeroShop />
+      <Newsletter />
     </main>
   );
 };

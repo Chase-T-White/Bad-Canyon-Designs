@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
-import artData from "../../data/artData.json";
+import artData from "../../../../data/artData.json";
 import "./heroCarousel.css";
 
 const HeroCarousel = () => {

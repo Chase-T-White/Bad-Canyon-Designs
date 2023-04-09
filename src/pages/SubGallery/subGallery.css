@@ -5,6 +5,10 @@
   padding-block: 8rem;
 }
 
+.subpage-heading {
+  text-transform: capitalize;
+}
+
 .artPiece-container {
   position: relative;
   isolation: isolate;

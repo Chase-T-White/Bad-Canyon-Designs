@@ -11,6 +11,7 @@ import { Link, useParams } from "react-router-dom";
 import { BiExpandAlt } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 import "./subGallery.css";
+import { formatHeadings } from "../../utils/helpers";
 
 const SubGallery = () => {
   const [show, setShow] = useState(false);
@@ -39,7 +40,9 @@ const SubGallery = () => {
     return (
       <main>
         <header className="gallery-header mb-0">
-          <h2 className="text-center">{url.category}</h2>
+          <h2 className="text-center subpage-heading">
+            {formatHeadings(url.category)}
+          </h2>
         </header>
         <article className={`${url.category} subGallery-bg`}>
           <Modal show={show} onHide={handleClose}>
