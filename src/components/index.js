@@ -6,3 +6,5 @@ export { default as Filter } from "./Filter/Filter";
 export { default as Loading } from "./Loading/Loading";
 export { default as Error } from "./Error/Error";
 export { default as NavigationBar } from "./NavigationBar/NavigationBar";
+export { default as ArtPiece } from "./ArtPiece/ArtPiece";
+export { default as ArtPieceModal } from "./ArtPieceModal/ArtPieceModal";
