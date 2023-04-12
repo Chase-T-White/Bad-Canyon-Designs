@@ -33,7 +33,8 @@
   color: #ffffff8a;
 }
 
-.nav-link.active {
+.nav-link.active,
+.dropdown-toggle:focus {
   color: #66241a !important;
 }
 
@@ -53,6 +54,14 @@
 .nav-link:hover:after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.dropdown-toggle::after {
+  border: none;
+}
+
+.nav-dropdown__item {
+  font-size: 1.2rem;
 }
 
 .nav-link + .nav-link {

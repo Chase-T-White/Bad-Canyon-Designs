@@ -1,0 +1,23 @@
+#toTopButton {
+  display: block;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: #66241a;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 100vw;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#toTopButton:hover {
+  background-color: #4d1b13;
+}
+
+.topButtonIcon {
+  font-size: 1.4rem;
+}

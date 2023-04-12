@@ -8,3 +8,4 @@ export { default as Error } from "./Error/Error";
 export { default as NavigationBar } from "./NavigationBar/NavigationBar";
 export { default as ArtPiece } from "./ArtPiece/ArtPiece";
 export { default as ArtPieceModal } from "./ArtPieceModal/ArtPieceModal";
+export { default as ToTopButton } from "./ToTopButton/ToTopButton";

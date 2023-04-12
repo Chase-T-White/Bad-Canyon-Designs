@@ -14,7 +14,7 @@ import {
   Login,
   Error,
 } from "./pages";
-import { NavigationBar, Footer } from "./components";
+import { NavigationBar, Footer, ToTopButton } from "./components";
 import { useSelector } from "react-redux";
 import useScript from "./hooks/useScript";
 
@@ -24,6 +24,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavigationBar />
+      <ToTopButton />
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />

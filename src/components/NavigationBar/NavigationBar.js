@@ -49,7 +49,7 @@ const NavigationBar = () => {
                   eventKey="1.1"
                   as={Link}
                   to="gallery"
-                  className="nav-link"
+                  className="nav-dropdown__item"
                 >
                   All
                 </NavDropdown.Item>
@@ -57,7 +57,7 @@ const NavigationBar = () => {
                   eventKey="1.2"
                   as={Link}
                   to="gallery/landscapes_nature"
-                  className="nav-link"
+                  className="nav-dropdown__item"
                 >
                   Landscapes
                 </NavDropdown.Item>
@@ -65,7 +65,7 @@ const NavigationBar = () => {
                   eventKey="1.3"
                   as={Link}
                   to="gallery/animals"
-                  className="nav-link"
+                  className="nav-dropdown__item"
                 >
                   Animals
                 </NavDropdown.Item>
@@ -73,7 +73,7 @@ const NavigationBar = () => {
                   eventKey="1.4"
                   as={Link}
                   to="gallery/people"
-                  className="nav-link"
+                  className="nav-dropdown__item"
                 >
                   People
                 </NavDropdown.Item>
@@ -81,7 +81,7 @@ const NavigationBar = () => {
                   eventKey="1.5"
                   as={Link}
                   to="gallery/abstract"
-                  className="nav-link"
+                  className="nav-dropdown__item"
                 >
                   Abstract
                 </NavDropdown.Item>
@@ -89,7 +89,7 @@ const NavigationBar = () => {
                   eventKey="1.6"
                   as={Link}
                   to="gallery/crafts"
-                  className="nav-link"
+                  className="nav-dropdown__item"
                 >
                   Crafts
                 </NavDropdown.Item>
