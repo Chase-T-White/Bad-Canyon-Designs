@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import { Link, useNavigate } from "react-router-dom";
@@ -43,14 +44,56 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="w-100 justify-content-evenly mx-auto nav-link-container">
-              <Nav.Link
-                eventKey="1"
-                as={Link}
-                to="gallery"
-                className="nav-link"
-              >
-                Gallery
-              </Nav.Link>
+              <NavDropdown title="Gallery">
+                <NavDropdown.Item
+                  eventKey="1.1"
+                  as={Link}
+                  to="gallery"
+                  className="nav-link"
+                >
+                  All
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  eventKey="1.2"
+                  as={Link}
+                  to="gallery/landscapes_nature"
+                  className="nav-link"
+                >
+                  Landscapes
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  eventKey="1.3"
+                  as={Link}
+                  to="gallery/animals"
+                  className="nav-link"
+                >
+                  Animals
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  eventKey="1.4"
+                  as={Link}
+                  to="gallery/people"
+                  className="nav-link"
+                >
+                  People
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  eventKey="1.5"
+                  as={Link}
+                  to="gallery/abstract"
+                  className="nav-link"
+                >
+                  Abstract
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  eventKey="1.6"
+                  as={Link}
+                  to="gallery/crafts"
+                  className="nav-link"
+                >
+                  Crafts
+                </NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link eventKey="2" as={Link} to="shop" className="nav-link">
                 Shop
               </Nav.Link>
