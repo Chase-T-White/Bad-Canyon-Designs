@@ -7,6 +7,8 @@ const gallerySlice = createSlice({
     fullGallery: gallery,
     subGallery: null,
     artPiece: null,
+    showModal: false,
+    modalArt: [],
   },
   reducers: {
     setSubGallery(state, action) {
@@ -18,6 +20,17 @@ const gallerySlice = createSlice({
       state.artPiece = state.fullGallery[0][category].find((artPiece) => {
         return artPiece.id === id;
       });
+    },
+    handleClose(state) {
+      state.showModal = false;
+    },
+    handleShow(state, action) {
+      const { category, title } = action.payload;
+      const pullModalArt = state.fullGallery[0][category].find((artPiece) => {
+        return artPiece.title === title;
+      });
+      state.modalArt = pullModalArt;
+      state.showModal = true;
     },
   },
 });
