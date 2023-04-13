@@ -1,0 +1,27 @@
+.story__canvas-container {
+  position: relative;
+  min-width: 550px;
+  min-height: 400px;
+}
+
+#canvas1 {
+  border: 3px solid white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
+  height: 400px;
+}
+
+.studio-intro img {
+  border: 3px solid white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
+  height: 400px;
+}
+
+.story__img {
+  object-fit: contain;
+}
