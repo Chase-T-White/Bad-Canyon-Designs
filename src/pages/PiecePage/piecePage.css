@@ -1,5 +1,10 @@
 .piece-section {
   background-image: url(/public/assets/herobg.jpg);
+  margin-bottom: 73px;
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
 }
 
 .piece-img {

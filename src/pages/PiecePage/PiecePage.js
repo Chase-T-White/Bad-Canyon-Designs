@@ -38,7 +38,7 @@ const PiecePage = () => {
     return (
       <article className="piece-section py-5 px-3">
         <Container fluid="lg">
-          <Row>
+          <Row xs={1} md={2} className="align-items-center">
             <Col>
               <Image fluid src={pieceData.image} className="piece-img"></Image>
             </Col>
@@ -54,7 +54,6 @@ const PiecePage = () => {
               <br />
               <Button onClick={addToCart}>Add To Cart</Button>
             </Col>
-            /
           </Row>
         </Container>
       </article>

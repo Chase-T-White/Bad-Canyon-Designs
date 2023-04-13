@@ -2,7 +2,7 @@ import React from "react";
 import {
   HeroCarousel,
   Transition,
-  Collage,
+  Gallery,
   Events,
   HeroShop,
   Newsletter,
@@ -16,7 +16,7 @@ const Home = () => {
       <section className="hero">
         <HeroCarousel />
       </section>
-      <Collage />
+      <Gallery />
       <section className="home-transition transition-1"></section>
       <Events />
       <Transition

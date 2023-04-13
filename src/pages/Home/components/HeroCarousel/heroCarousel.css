@@ -1,12 +1,16 @@
 .carousel {
-  max-height: 100%;
+  height: 100%;
   overflow-y: hidden;
   display: flex;
   align-items: center;
 }
 
+.carousel-inner {
+  height: inherit;
+}
+
 .carousel-item {
-  height: calc(100vh - 58px);
+  height: inherit;
 }
 
 .carousel-img {
@@ -17,8 +21,9 @@
 }
 
 .carousel-caption {
-  top: 70%;
+  width: 100%;
   left: 50%;
+  bottom: 3rem;
   transform: translate(-50%);
   padding: 0;
 }

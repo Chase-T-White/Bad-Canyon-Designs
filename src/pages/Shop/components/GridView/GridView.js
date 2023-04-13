@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Product from "../Product/Product";
+import { Product } from "../../../../components";
 
 const GridView = ({ products }) => {
   return (

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { sortActions } from "../../store/sortSlice";
-import categories from "../../data/productFields.json";
+import { sortActions } from "../../../../store/sortSlice";
+import categories from "../../../../data/productFields.json";
 import "./filter.css";
+import { BsChevronUp } from "react-icons/bs";
 
 const Filter = () => {
+  const [showCategories, setShowCategories] = useState(false);
   const { filter, subCategories } = useSelector((state) => state.sort);
   const dispatch = useDispatch();
 
@@ -17,7 +19,7 @@ const Filter = () => {
   };
 
   return (
-    <aside className="text-white">
+    <aside className="filter text-white">
       <h3>Filters</h3>
       <hr />
       <h4>
@@ -28,7 +30,9 @@ const Filter = () => {
       <div className="filter-category mb-2">
         {filter !== "none" && <h4>{filter}</h4>}
       </div>
-      <div className="categories ps-3">
+      <div
+        className={`categories ps-3 ${showCategories ? "open-categories" : ""}`}
+      >
         {filter === "none"
           ? categories.map((category) => {
               return (
@@ -55,6 +59,10 @@ const Filter = () => {
               );
             })}
       </div>
+      <BsChevronUp
+        className={`filter__show-category-icon ${showCategories ? "open" : ""}`}
+        onClick={() => setShowCategories(!showCategories)}
+      />
     </aside>
   );
 };

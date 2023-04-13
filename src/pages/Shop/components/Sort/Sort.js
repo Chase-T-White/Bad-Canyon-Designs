@@ -1,12 +1,13 @@
 import React from "react";
+import "./sort.css";
 import { BsFillGridFill, BsList } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import { useDispatch, useSelector } from "react-redux";
-import { viewActions } from "../../store/viewSlice";
-import { sortActions } from "../../store/sortSlice";
+import { viewActions } from "../../../../store/viewSlice";
+import { sortActions } from "../../../../store/sortSlice";
 
 const Sort = () => {
   const dispatch = useDispatch();
@@ -35,7 +36,7 @@ const Sort = () => {
           </Button>
         </div>
         <div className="d-inline-flex align-items-center w-100">
-          <p className="text-white mb-0">
+          <p className="items-available text-white mb-0">
             {filteredProducts.length} items available
           </p>
         </div>

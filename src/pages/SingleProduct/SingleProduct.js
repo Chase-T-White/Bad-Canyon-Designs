@@ -30,7 +30,7 @@ const SingleProduct = () => {
   };
 
   return (
-    <main className="singleProduct">
+    <main className="singleProduct mt-5">
       <Container fluid="lg" className="product-container">
         <Row xs={1} md={2}>
           <Col>
@@ -43,7 +43,7 @@ const SingleProduct = () => {
               ></Image>
             </div>
           </Col>
-          <Col className="product-text-container">
+          <Col className="product-text-container mb-5">
             <aside>
               <h2>{name}</h2>
               <p>Designs by Nickolas White</p>

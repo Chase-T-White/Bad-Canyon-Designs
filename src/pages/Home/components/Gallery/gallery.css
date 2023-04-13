@@ -58,7 +58,8 @@
   font-size: 3rem;
 }
 
-.gallery-row:hover .hover-box {
+.gallery-row:hover .hover-box,
+.gallery-row:focus .hover-box {
   transform: translateY(0%);
 }
 
@@ -83,7 +84,8 @@
   color: #66241a;
 }
 
-.gallery-row:hover .icon-container {
+.gallery-row:hover .icon-container,
+.gallery-row:focus .icon-container {
   transform: translateX(-20%);
   animation: 2s infinite bounce;
   animation-delay: 0.5s;
