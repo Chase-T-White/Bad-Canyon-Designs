@@ -1,6 +1,6 @@
 import React from "react";
 import "./artPieceModal.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
@@ -8,6 +8,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { galleryActions } from "../../store/gallerySlice";
 
 const ArtPieceModal = () => {
+  const url = useParams();
+  console.log(url.category === undefined);
   const dispatch = useDispatch();
   const modalArt = useSelector((state) => state.gallery.modalArt);
   const show = useSelector((state) => state.gallery.showModal);
@@ -26,7 +28,11 @@ const ArtPieceModal = () => {
         <Image fluid src={modalArt.image} className="modal__img"></Image>
       </Modal.Body>
       <Modal.Footer>
-        <Link to={`${modalArt.category}/${modalArt.id}`}>
+        <Link
+          to={`${url.category !== undefined ? "/" : modalArt.category + "/"}${
+            modalArt.id
+          }`}
+        >
           <Button variant="primary">Details</Button>
         </Link>
       </Modal.Footer>

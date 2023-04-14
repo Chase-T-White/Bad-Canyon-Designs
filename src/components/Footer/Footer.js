@@ -15,7 +15,10 @@ const Footer = () => {
     <footer className="py-4 footer">
       <Container>
         <Row className="align-items-center">
-          <Col>Bad Canyon Designs &copy; {new Date().getFullYear()}</Col>
+          <Col>
+            Bad Canyon Designs &copy; {new Date().getFullYear()} All Rights
+            Reserved
+          </Col>
           <Col className="text-end">
             <Link
               to="https://www.facebook.com/badcanyondesigns/"

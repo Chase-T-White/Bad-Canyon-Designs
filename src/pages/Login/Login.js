@@ -1,4 +1,5 @@
 import React from "react";
+import "./login.css";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -15,10 +16,12 @@ const Login = () => {
     navigate("/");
   };
   return (
-    <main>
+    <main className="login">
+      <header className="gallery-header">
+        <h2 className="text-center">Login</h2>
+      </header>
       <Container>
         <Form onSubmit={handleSubmit}>
-          <h1 className="text-white">Login</h1>
           <Form.Group className="mb-3">
             <Form.Label className="text-white">Username</Form.Label>
             <Form.Control type="email" placeholder="user@email.com" />
@@ -27,7 +30,7 @@ const Login = () => {
             <Form.Label className="text-white">Password</Form.Label>
             <Form.Control type="password" placeholder="password" />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" className="px-5 mb-5">
             Login
           </Button>
         </Form>

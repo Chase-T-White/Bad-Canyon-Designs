@@ -26,24 +26,26 @@ const Cart = () => {
 
   if (cartItems.length === 0) {
     return (
-      <Container className="empty-cart">
+      <main className="cart">
         <header className="gallery-header">
           <h2 className="text-center">Cart</h2>
         </header>
-        <h3 className="text-center mb-4">
-          There are no items in your cart.
-          <br />
-          Go, spend money. Then get excited to spend more money.
-        </h3>
-        <div className="d-flex justify-content-center">
-          <Link to={"../shop"}>
-            <Button className="px-4 me-2">Spend Money</Button>
-          </Link>
-          <Link to={"../gallery"}>
-            <Button className="px-4">Buy Art</Button>
-          </Link>
-        </div>
-      </Container>
+        <Container className="empty-cart">
+          <h3 className="text-center mb-4">
+            There are no items in your cart.
+            <br />
+            Go, spend money. Then get excited to spend more money.
+          </h3>
+          <div className="d-flex justify-content-center">
+            <Link to={"../shop"}>
+              <Button className="px-4 me-2">Spend Money</Button>
+            </Link>
+            <Link to={"../gallery"}>
+              <Button className="px-4">Buy Art</Button>
+            </Link>
+          </div>
+        </Container>
+      </main>
     );
   }
 
