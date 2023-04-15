@@ -1,14 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// const getLocalStorage = () => {
-//   let cart = localStorage.getItem('cart');
-//   if (cart) {
-//     return JSON.parse(localStorage.getItem('cart'))
-//   } else {
-//     return []
-//   }
-// }
-
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
@@ -45,6 +36,29 @@ const cartSlice = createSlice({
       state.itemsList = [];
       state.amount = 0;
       state.total = 0;
+    },
+    adjustItemQuantity(state, action) {
+      const { adjustment: adjustmentType, item: cartItem } = action.payload;
+      const existingItem = state.itemsList.find((item) => {
+        return item.id === cartItem.id;
+      });
+      if (adjustmentType === "increase") {
+        existingItem.quantity++;
+        state.total += existingItem.price;
+        state.amount++;
+      } else {
+        if (existingItem.quantity === 1) {
+          state.amount -= existingItem.quantity;
+          state.total -= existingItem.price * existingItem.quantity;
+          state.itemsList = state.itemsList.filter((item) => {
+            return item.id !== existingItem.id;
+          });
+        } else {
+          existingItem.quantity--;
+          state.total -= existingItem.price;
+          state.amount--;
+        }
+      }
     },
   },
 });

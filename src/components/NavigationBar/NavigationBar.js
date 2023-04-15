@@ -118,14 +118,22 @@ const NavigationBar = () => {
       <Nav className="nav-icons">
         <div className="cart-container">
           <Link to={"cart"}>
-            <HiOutlineShoppingCart className="cart-button" />
+            <HiOutlineShoppingCart className="cart-button" title="Cart" />
           </Link>
           {amount !== 0 && <div className="cart-amount">{amount}</div>}
         </div>
         {isLoggedIn ? (
-          <FiLogOut className="cart-button" onClick={handleUserLog} />
+          <FiLogOut
+            className="cart-button"
+            onClick={handleUserLog}
+            title="Logout"
+          />
         ) : (
-          <FiLogIn className="cart-button" onClick={handleUserLog} />
+          <FiLogIn
+            className="cart-button"
+            onClick={handleUserLog}
+            title="Login"
+          />
         )}
       </Nav>
     </Navbar>

@@ -93,6 +93,7 @@
 .cart-button {
   font-size: 2rem;
   color: #66241a;
+  cursor: pointer;
 }
 
 .cart-amount {

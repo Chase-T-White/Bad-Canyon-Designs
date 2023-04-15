@@ -3,13 +3,14 @@ import "./artPiece.css";
 import { useInView } from "react-intersection-observer";
 import { BiExpandAlt } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { useDispatch } from "react-redux";
 import { galleryActions } from "../../store/gallerySlice";
 
 const ArtPiece = ({ category, piece }) => {
+  const url = useParams();
   const dispatch = useDispatch();
   const handleShow = () => {
     dispatch(galleryActions.handleShow(piece));
@@ -30,7 +31,10 @@ const ArtPiece = ({ category, piece }) => {
           title="Expand"
           onClick={() => handleShow()}
         />
-        <Link to={`${category}/${piece.id}`} title="Details">
+        <Link
+          to={`${url.category !== undefined ? "" : category + "/"}${piece.id}`}
+          title="Details"
+        >
           <BsArrowRight className="artPiece__hoverBox-icon" />
         </Link>
       </div>

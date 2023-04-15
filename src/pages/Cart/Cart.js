@@ -1,4 +1,5 @@
 import React from "react";
+import "./cart.css";
 import Table from "react-bootstrap/Table";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
@@ -7,8 +8,8 @@ import Row from "react-bootstrap/Row";
 import { cartActions } from "../../store/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { formatPrice } from "../../utils/helpers";
+import { BiMinus, BiPlus } from "react-icons/bi";
 import { GoTrashcan } from "react-icons/go";
-import "./cart.css";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
@@ -18,6 +19,10 @@ const Cart = () => {
 
   const removeItem = ({ id, quantity, price }) => {
     dispatch(cartActions.removeFromCart({ id, quantity, price }));
+  };
+
+  const adjustQuantity = (adjustment, item) => {
+    dispatch(cartActions.adjustItemQuantity({ adjustment, item }));
   };
 
   const clearCart = () => {
@@ -89,7 +94,19 @@ const Cart = () => {
                     />
                   </td>
                   <td>{formatPrice(item.price)}</td>
-                  <td>{item.quantity}</td>
+                  <td>
+                    <div className="cart__quantity-container">
+                      <BiPlus
+                        className="cart__quantity-icon"
+                        onClick={() => adjustQuantity("increase", item)}
+                      />
+                      {item.quantity}
+                      <BiMinus
+                        className="cart__quantity-icon"
+                        onClick={() => adjustQuantity("decrease", item)}
+                      />
+                    </div>
+                  </td>
                   <td>{formatPrice(item.price * item.quantity)}</td>
                 </tr>
               );

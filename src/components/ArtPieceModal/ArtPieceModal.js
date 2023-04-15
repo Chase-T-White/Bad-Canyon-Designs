@@ -29,7 +29,7 @@ const ArtPieceModal = () => {
       </Modal.Body>
       <Modal.Footer>
         <Link
-          to={`${url.category !== undefined ? "/" : modalArt.category + "/"}${
+          to={`${url.category !== undefined ? "" : modalArt.category + "/"}${
             modalArt.id
           }`}
         >

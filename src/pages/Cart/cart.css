@@ -43,3 +43,9 @@
 .cart__button-container a button {
   width: 100%;
 }
+
+.cart__quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

@@ -33,12 +33,8 @@ const Contact = () => {
             <Form.Control as="textarea" row={10} />
           </Form.Group>
           <Form.Group>
-            <Form.Check type="checkbox" label="Send me updates" checked />
-            <Form.Check
-              type="checkbox"
-              label="Sign up for newsletter"
-              checked
-            />
+            <Form.Check type="checkbox" label="Send me updates" />
+            <Form.Check type="checkbox" label="Sign up for newsletter" />
           </Form.Group>
           <Form.Group>
             <Button variant="primary" type="submit" className="px-4 mb-5">
