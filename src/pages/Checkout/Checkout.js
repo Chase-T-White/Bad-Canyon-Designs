@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./checkout.css";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
 import { loadStripe } from "@stripe/stripe-js";
 import {
   CardElement,
@@ -77,39 +80,48 @@ const Checkout = () => {
   };
 
   return (
-    <div>
-      {succeeded ? (
-        <article>
-          <h4>Thank you</h4>
-          <h4>Your payment was successful!</h4>
-          <h4>Redirecting Home</h4>
-        </article>
-      ) : (
-        <article>
-          <h4>Hello, User</h4>
-          <p>Your total is {formatPrice(total)}</p>
-          <p>Test Card Number : 4242 4242 4242 4242</p>
-        </article>
-      )}
-      <form id="payment-form" onSubmit={handleSubmit}>
-        <CardElement id="card-element" onChange={handleChange} />
-        <button disabled={processing || disabled || succeeded} id="submit">
-          <span id="button-text">
-            {processing ? <div className="spinner" id="spinner"></div> : "Pay"}
-          </span>
-        </button>
-        {/* Show any error that happens when processing the payment */}
-        {error && (
-          <div className="card-error" role="alert">
-            {error}
-          </div>
+    <main className="checkout">
+      <header className="gallery-header">
+        <h2 className="text-center">Checkout</h2>
+      </header>
+      <Container>
+        {succeeded ? (
+          <article>
+            <h4>Thank you</h4>
+            <h4>Your payment was successful!</h4>
+            <h4>Redirecting Home</h4>
+          </article>
+        ) : (
+          <article>
+            <h4>Hello, User</h4>
+            <p>Your total is {formatPrice(total)}</p>
+            <p>Test Card Number : 4242 4242 4242 4242</p>
+          </article>
         )}
-        {/* Show a success message upon completion */}
-        <p className={succeeded ? "result-message" : "result-message-hidden"}>
-          Payment succeeded
-        </p>
-      </form>
-    </div>
+        <Form id="payment-form" onSubmit={handleSubmit}>
+          <CardElement id="card-element" onChange={handleChange} />
+          <Button disabled={processing || disabled || succeeded} id="submit">
+            <span id="button-text">
+              {processing ? (
+                <div className="spinner" id="spinner"></div>
+              ) : (
+                "Pay"
+              )}
+            </span>
+          </Button>
+          {/* Show any error that happens when processing the payment */}
+          {error && (
+            <div className="card-error" role="alert">
+              {error}
+            </div>
+          )}
+          {/* Show a success message upon completion */}
+          <p className={succeeded ? "result-message" : "result-message-hidden"}>
+            Payment succeeded
+          </p>
+        </Form>
+      </Container>
+    </main>
   );
 };
 

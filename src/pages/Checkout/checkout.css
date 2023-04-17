@@ -1,4 +1,8 @@
-form {
+.checkout {
+  margin-bottom: 73px;
+}
+
+#payment-form {
   width: 30vw;
   min-width: 500px;
   align-self: center;
@@ -8,20 +12,52 @@ form {
   padding: 40px;
 }
 
-#payment-message {
+input {
+  border-radius: 6px;
+  margin-bottom: 6px;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  max-height: 44px;
+  font-size: 16px;
+  width: 100%;
+  background: white;
+  box-sizing: border-box;
+}
+
+.result-message {
+  line-height: 22px;
+  font-size: 16px;
+}
+.result-message a {
+  color: rgb(89, 111, 214);
+  font-weight: 600;
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+#card-error {
   color: rgb(105, 115, 134);
   font-size: 16px;
   line-height: 20px;
-  padding-top: 12px;
+  margin-top: 12px;
   text-align: center;
 }
-
-#payment-element {
-  margin-bottom: 24px;
+#card-element {
+  border-radius: 4px 4px 0 0;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  max-height: 44px;
+  width: 100%;
+  background: white;
+  box-sizing: border-box;
+}
+#payment-request-button {
+  margin-bottom: 32px;
 }
 
 /* Buttons and links */
-button {
+#submit {
   background: #5469d4;
   font-family: Arial, sans-serif;
   color: #ffffff;
@@ -37,11 +73,11 @@ button {
   width: 100%;
 }
 
-button:hover {
+#submit:hover {
   filter: contrast(115%);
 }
 
-button:disabled {
+#submit:disabled {
   opacity: 0.5;
   cursor: default;
 }
@@ -111,7 +147,7 @@ button:disabled {
 }
 
 @media only screen and (max-width: 600px) {
-  form {
+  #payment-form {
     width: 80vw;
     min-width: initial;
   }
