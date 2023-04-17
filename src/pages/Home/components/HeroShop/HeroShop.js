@@ -23,8 +23,6 @@ const HeroShop = () => {
     dispatch(sortActions.pullFeaturedProducts());
   }, [dispatch]);
 
-  console.log(featuredProducts);
-
   return (
     <section className="heroShop">
       <header className="section-header">
