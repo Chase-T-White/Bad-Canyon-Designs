@@ -43,7 +43,7 @@ const Checkout = () => {
       );
       setClientSecret(data.clientSecret);
     } catch (error) {
-      console.log(error.response);
+      // console.log(error.response);
     }
   };
 
@@ -51,6 +51,24 @@ const Checkout = () => {
     createPaymentIntent();
     // eslint-disable-next-line
   }, []);
+
+  const cardStyle = {
+    style: {
+      base: {
+        color: "#32325d",
+        fontFamily: "Arial, sans-serif",
+        fontSmoothing: "antialiased",
+        fontSize: "16px",
+        "::placeholder": {
+          color: "#32325d",
+        },
+      },
+      invalid: {
+        color: "#fa755a",
+        iconColor: "#fa755a",
+      },
+    },
+  };
 
   const handleChange = async (event) => {
     setDisabled(event.empty);
@@ -99,7 +117,11 @@ const Checkout = () => {
           </article>
         )}
         <Form id="payment-form" onSubmit={handleSubmit}>
-          <CardElement id="card-element" onChange={handleChange} />
+          <CardElement
+            id="card-element"
+            options={cardStyle}
+            onChange={handleChange}
+          />
           <Button disabled={processing || disabled || succeeded} id="submit">
             <span id="button-text">
               {processing ? (
@@ -116,7 +138,7 @@ const Checkout = () => {
             </div>
           )}
           {/* Show a success message upon completion */}
-          <p className={succeeded ? "result-message" : "result-message-hidden"}>
+          <p className={succeeded ? "result-message" : "result-message hidden"}>
             Payment succeeded
           </p>
         </Form>
