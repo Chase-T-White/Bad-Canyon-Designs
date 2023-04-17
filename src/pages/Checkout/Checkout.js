@@ -37,8 +37,9 @@ const Checkout = () => {
 
   const createPaymentIntent = async () => {
     try {
-      const data = await axios.post(
+      const { data } = await axios.post(
         "/.netlify/functions/create-payment-intent",
+
         JSON.stringify({ cart, total })
       );
       setClientSecret(data.clientSecret);
@@ -71,12 +72,14 @@ const Checkout = () => {
   };
 
   const handleChange = async (event) => {
+    // Listen for changes in the CardElement
+    // and display any errors as the customer types their card details
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (ev) => {
+    ev.preventDefault();
     setProcessing(true);
     const payload = await stripe.confirmCardPayment(clientSecret, {
       payment_method: {
@@ -92,7 +95,7 @@ const Checkout = () => {
       setSucceeded(true);
       setTimeout(() => {
         clearCart();
-        navigate.push("/");
+        navigate("/");
       }, 10000);
     }
   };
