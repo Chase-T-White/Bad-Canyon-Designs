@@ -20,7 +20,7 @@ const promise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
 const Checkout = () => {
   const dispatch = useDispatch();
-  const cart = useSelector((state) => state.cart.itemsList);
+  // const cart = useSelector((state) => state.cart.itemsList);
   const total = useSelector((state) => state.cart.total);
   const navigate = useNavigate();
 
@@ -40,7 +40,7 @@ const Checkout = () => {
       const { data } = await axios.post(
         "/.netlify/functions/create-payment-intent",
 
-        JSON.stringify({ cart, total })
+        JSON.stringify({ total })
       );
       setClientSecret(data.clientSecret);
     } catch (error) {
